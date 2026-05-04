@@ -71,3 +71,4 @@ git push origin feature/ชื่อของคุณ-ชื่องาน
 ```Bash
 python main.py
 ```
+อาจารย์
