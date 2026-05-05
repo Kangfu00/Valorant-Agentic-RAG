@@ -13,7 +13,7 @@ Markdown
 ### 1. ติดตั้งไลบรารีที่จำเป็น
 เปิด Terminal ในโฟลเดอร์โปรเจกต์ แล้วรันคำสั่ง:
 ```bash
-pip install langchain langchain-google-genai langchain-classic python-dotenv
+pip install langchain langchain-google-genai langchain-openai langchain-classic python-dotenv
 ```
 ### 2. การตั้งค่า API Key (ไฟล์ .env)
 ⚠️ ห้าม Hardcode (พิมพ์) API Key ลงไปในไฟล์โค้ดโดยตรงเด็ดขาด
@@ -26,6 +26,31 @@ pip install langchain langchain-google-genai langchain-classic python-dotenv
 ```Plaintext
 GOOGLE_API_KEY=ใส่_API_KEY_ของคุณที่นี่
 ```
+
+### 3. เชื่อมต่อ Typhoon API ต่อจาก Gemini
+หากต้องการใช้ Typhoon แทนหรือควบคู่กับ Gemini ให้เพิ่มค่าต่อไปนี้ในไฟล์ `.env`:
+
+```Plaintext
+TYPHOON_API_KEY=ใส่_API_KEY_ของคุณที่นี่
+```
+
+- `main.py` ใช้งาน Gemini โดยอ่านค่า `GOOGLE_API_KEY`
+- `main_typhoon.py` ใช้งาน Typhoon โดยอ่านค่า `TYPHOON_API_KEY`
+- ไฟล์ทั้งสองสามารถอยู่ในโปรเจกต์เดียวกันได้ หากเก็บคีย์ไว้ใน `.env` พร้อมกัน
+
+ตัวอย่างการรัน:
+
+```bash
+python main.py         # รันด้วย Gemini
+python main_typhoon.py # รันด้วย Typhoon
+```
+
+> หมายเหตุ: `main_typhoon.py` จะเชื่อมต่อ Typhoon ผ่าน `ChatOpenAI` และตั้ง `base_url` เป็น `https://api.opentyphoon.ai/v1` เพื่อชี้ไปยังเซิร์ฟเวอร์ Typhoon
+
+### 4. ถ้าติดตั้งแล้ว แต่ยังรันไม่ผ่าน
+- ตรวจสอบว่าไฟล์ `.env` อยู่ในโฟลเดอร์เดียวกับ `main.py`
+- ตรวจสอบว่า `TYPHOON_API_KEY` ถูกตั้งค่าเรียบร้อย
+- หากยังไม่พบแพ็กเกจ `langchain_openai` ให้รัน `pip install langchain-openai`
 ### 🌿 กฎการทำงานกับ Git (Git Workflow)
 เพื่อป้องกันไม่ให้โค้ดพังหรือตีกันเวลารวมงาน ห้าม Push โค้ดเข้าสาขา main โดยตรงเด็ดขาด! ให้ทุกคนสร้าง Branch ของตัวเองสำหรับทำงานแต่ละส่วน โดยทำตามขั้นตอนดังนี้:
 - Step 1: อัปเดตโค้ดล่าสุดเสมอ
