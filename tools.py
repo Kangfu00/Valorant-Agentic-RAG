@@ -40,6 +40,10 @@ def get_or_create_db(db_variable, file_name):
         docs = loader.load()
         
         md_splits = markdown_splitter.split_text(docs[0].page_content)
+        for doc in md_splits:
+            if "Specific Item" in doc.metadata:
+                name = doc.metadata["Specific Item"]
+                doc.page_content = f"Agent: {name}\n" + doc.page_content
         final_splits = text_splitter.split_documents(md_splits)
         
         db = FAISS.from_documents(final_splits, embeddings)
@@ -63,19 +67,19 @@ def search_agent_money(query: str) -> str:
     if agent_vector_db is None:
         return "ระบบฐานข้อมูล money ขัดข้อง"
         
-    docs = agent_vector_db.similarity_search(query, k=3)
+    docs = agent_vector_db.similarity_search(query, k=5)
     return "\n\n".join([f"อ้างอิงจากหัวข้อ: {doc.metadata}\nรายละเอียด: {doc.page_content}" for doc in docs])
 
 @tool
 def search_agent_strategy(query: str) -> str:
-    """ใช้ Tool นี้เมื่อผู้ใช้ถามเกี่ยวกับ 'ตัวละคร (Agent)' ในเกม"""
+    """ใช้ Tool นี้เมื่อผู้ใช้ถามเกี่ยวกับ Agent เช่น สกิล (abilities), role, หรือวิธีเล่นของตัวละครในเกม Valorant"""
     global agent_vector_db
     agent_vector_db = get_or_create_db(agent_vector_db, "Agent.md") # ชี้ไปที่ไฟล์ใหม่ของคุณ
     
     if agent_vector_db is None:
         return "ระบบฐานข้อมูล Agent ขัดข้อง"
         
-    docs = agent_vector_db.similarity_search(query, k=3)
+    docs = agent_vector_db.similarity_search(query, k=5)
     return "\n\n".join([f"อ้างอิงจากหัวข้อ: {doc.metadata}\nรายละเอียด: {doc.page_content}" for doc in docs])
 
 @tool
@@ -87,7 +91,7 @@ def search_map_strategy(query: str) -> str:
     if map_vector_db is None:
         return "ระบบฐานข้อมูลแผนที่ขัดข้อง"
         
-    docs = map_vector_db.similarity_search(query, k=3)
+    docs = map_vector_db.similarity_search(query, k=5)
     return "\n\n".join([f"อ้างอิงจากหัวข้อ: {doc.metadata}\nรายละเอียด: {doc.page_content}" for doc in docs])
 
 @tool
@@ -99,7 +103,7 @@ def search_weapon_strategy(query: str) -> str:
     if gun_vector_db is None:
          return "ระบบฐานข้อมูลอาวุธขัดข้อง"
          
-    docs = gun_vector_db.similarity_search(query, k=3)
+    docs = gun_vector_db.similarity_search(query, k=5)
     return "\n\n".join([f"อ้างอิงจากหัวข้อ: {doc.metadata}\nรายละเอียด: {doc.page_content}" for doc in docs])
 
 @tool
@@ -111,7 +115,7 @@ def search_update_patch(query: str) -> str:
     if update_vector_db is None:
          return "ระบบฐานข้อมูลแพตช์ขัดข้อง"
          
-    docs = update_vector_db.similarity_search(query, k=3)
+    docs = update_vector_db.similarity_search(query, k=5)
     return "\n\n".join([f"อ้างอิงจากหัวข้อ: {doc.metadata}\nรายละเอียด: {doc.page_content}" for doc in docs])
 
 @tool

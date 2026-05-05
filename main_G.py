@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 
 # 1. นำเข้า Library (ใช้เฉพาะตัวที่จำเป็น)
-from langchain_openai import ChatOpenAI
+from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_classic.agents import AgentExecutor, create_tool_calling_agent
 from langchain_core.prompts import ChatPromptTemplate
 from tools import search_agent_strategy, search_map_strategy, search_weapon_strategy, search_update_patch, calculate_economy
@@ -11,8 +11,8 @@ from langchain_core.prompts import MessagesPlaceholder
 
 load_dotenv()
 
-# 2. โหลด API Key ของ Typhoon
-typhoon_api_key = os.environ.get("TYPHOON_API_KEY")
+# 2. โหลด API Key ของ Gemini
+gemini_api_key = os.environ.get("GOOGLE_API_KEY")
 
 def load_and_tag_data(file_path, category):
     from langchain_core.documents import Document
@@ -40,11 +40,10 @@ def load_and_tag_data(file_path, category):
     return tagged_docs
 
 def main():
-    # 3. ตั้งค่า LLM เป็น Typhoon
-    llm = ChatOpenAI(
-        api_key=typhoon_api_key,
-        base_url="https://api.opentyphoon.ai/v1", 
-        model="typhoon-v2.5-30b-a3b-instruct", 
+    # 3. ตั้งค่า LLM เป็น Gemini
+    llm = ChatGoogleGenerativeAI(
+        google_api_key=gemini_api_key,
+        model="gemini-2.5-flash", 
         temperature=0, 
         max_tokens=3000
     )
@@ -80,14 +79,14 @@ def main():
     agent=agent, 
     tools=tools, 
     verbose=True,
-    max_iterations=25,       # 1. เพิ่มจำนวนครั้งที่ให้ Agent คิด (ค่าเริ่มต้นมักจะเป็น 3-5)
+    max_iterations=10,          # 1. เพิ่มจำนวนครั้งที่ให้ Agent คิด (ค่าเริ่มต้นมักจะเป็น 3-5)
     handle_parsing_errors=True  # 2. ป้องกัน Agent พังเวลา LLM คืนค่าฟอร์แมตแปลกๆ มา
 )
     
     # 6. สมุดจดประวัติการคุยแบบ Manual
     chat_history = []
     
-    print("=== 🌪️ เริ่มต้น Valorant Agentic RAG (Powered by Typhoon) ===")
+    print("=== ✨ เริ่มต้น Valorant Agentic RAG (Powered by Gemini) ===")
     print("พิมพ์ 'exit' เพื่อออก\n")
 
     while True:
