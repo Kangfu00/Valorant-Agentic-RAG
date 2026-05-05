@@ -141,6 +141,14 @@ Riot จัด Ares และ Odin อยู่ในหมวดอาวุธ
 
 **Tactical Knife** — มีดไม่ใช่อาวุธซื้อ แต่เป็นเครื่องมือจัดการจังหวะรอบ: มันทำให้คุณวิ่งเร็วที่สุด, หมุนไซต์เร็วที่สุด, และทำลายวัตถุไวขึ้น. ในการสังหารจริงให้คิดว่ามีดน่าเชื่อถือเฉพาะตอนประชิดมากจริง ๆ หรือโจมตีด้านหลัง; อย่าพยายาม “โชว์หล่อ” ถ้าปืนยังมีทางปิดงานได้ปลอดภัยกว่า. citeturn22view3turn19view0
 
+### หลักเลือกปืนแบบใช้ได้จริง
+
+ในรอบ **pistol** ถ้าคุณจะรับบท duel ใกล้ ๆ ให้มอง **Ghost / Frenzy / Bandit**; ถ้าจะยืนไกลและหวังหัวให้ **Ghost**, ถ้าจะเข้าประชิดแบบแลกเร็วให้ **Frenzy**, ถ้าต้องการดาเมจหนักและกดดัน light armor ให้ **Bandit**. หลังชนะ pistol รอบถัดไปตัวเลือกยอดนิยมยังเป็น **Spectre** หรือถือปืนที่ตกมาแล้วซื้อโล่/สกิลเพิ่ม เพราะคุ้มกับเศรษฐกิจที่สุด. citeturn21view0turn29view0turn34view1turn35view0turn36view1
+
+ในรอบ **half-buy / force** ถ้าอยากมีโอกาสล้มคนถือ rifle จริงจัง ให้เลือกจาก **Sheriff, Stinger, Bulldog, Guardian, Marshal, Outlaw** ตามระยะที่คุณตั้งใจเล่น: Sheriff/Guardian สำหรับหัวคม, Stinger สำหรับเข้าไซต์, Bulldog สำหรับงบจำกัดแต่ยังอยากมี rifle logic, Marshal สำหรับ pick ไกล, และ Outlaw สำหรับ punish ฝั่งตรงข้ามที่ยังชอบ light armor. citeturn35view1turn36view0turn37view1turn38view0turn39view0turn40view0
+
+สำหรับ **full buy มาตรฐาน** ปืนหลักของเกมยังคงเป็น **Phantom กับ Vandal**: Phantom เด่นที่ fire rate, magazine, silencer และการ spam smoke; Vandal เด่นที่ one-tap หัวทุกระยะและความนิ่งเวลายิง burst ระยะกลาง-ไกล. Operator ยังเป็นปืนล็อกเลนระดับสูงสุด ส่วน Ares/Odin เป็นตัวเลือกเฉพาะสถานการณ์ที่คุ้มมากเมื่อคุณมี angle wallbang ชัดเจน. citeturn38view1turn29view1turn29view2turn39view2turn39view3
+
 ## แพทเทิร์นการซื้อรายรอบ
 
 คำแนะนำส่วนนี้สังเคราะห์จากราคาปัจจุบันของอาวุธและบทบาทการใช้งานใน Arsenal/ฐานข้อมูลอาวุธปัจจุบัน. citeturn11view0turn27view0
