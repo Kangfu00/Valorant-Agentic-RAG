@@ -23,10 +23,6 @@ pip install langchain langchain-google-genai langchain-openai langchain-classic 
 3. ไปขอรับคีย์ Gemini API ฟรีได้ที่: Google AI Studio
 4. ก๊อปปี้คีย์มาวางในไฟล์ .env ตามรูปแบบนี้ (ไม่ต้องมีเครื่องหมาย " "):
 
-```Plaintext
-GOOGLE_API_KEY=ใส่_API_KEY_ของคุณที่นี่
-```
-
 ### 3. เชื่อมต่อ Typhoon API ต่อจาก Gemini
 หากต้องการใช้ Typhoon แทนหรือควบคู่กับ Gemini ให้เพิ่มค่าต่อไปนี้ในไฟล์ `.env`:
 
