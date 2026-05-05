@@ -20,70 +20,331 @@
 
 หมวดปืนพกตาม Arsenal ทางการของ Riot มี 6 กระบอก: Bandit, Classic, Shorty, Frenzy, Ghost และ Sheriff; ค่าสถานะด้านล่างอิงจากฐานข้อมูลอาวุธรายชิ้น และรายละเอียด Bandit ตรวจทานกับ Riot Patch 12.00 เพิ่มเติม. citeturn27view0turn12view0turn12view1turn14search0turn13view2turn13view0turn21view6turn24search1
 
-| อาวุธ | ราคา | ดาเมจ H/B/L | โหมดยิง / แม็ก | ระยะ/ฟิลใช้งาน | เหมาะซื้อเมื่อ | บทบาท/Agent ที่เหมาะ |
-|---|---:|---|---|---|---|---|
-| Classic | 0 | 0–30m 78/26/22.1; 30–50m 66/22/18.7 | กึ่งอัตโนมัติ + คลิกขวา 3 นัด / 12 | ใกล้–กลาง; คลิกขวาเด่นระยะประชิด | พิสทอลรอบ, รอบเก็บเงิน | ทุกบทบาท โดยเฉพาะสายที่ต้องเก็บเงินไว้ซื้อสกิล |
-| Bandit | 600 | 0–10m 152/39/33; 10–30m 128/39/33; 30–50m 112/34/28 | กึ่งอัตโนมัติ / 8 | ใกล้–กลาง; นัดแรกคม; เน้นยิงหัว | พิสทอลรอบ, รอบเงินน้อยแบบมีลุ้น | Duelist/Initiator สายยิงคม |
-| Shorty | 300 | 0–7m 22/11/9.35; 7–15m 12/6/5.1; 15–50m 6/3/2.55 | ลูกซองกึ่งอัตโนมัติ / 2 | ใกล้จัด; มุมแคบ | รอบเก็บเงิน, ปิดมุม, กันดัน | Omen, Viper, Cypher, Killjoy |
-| Frenzy | 450 | 0–20m 78/26/22.1; 20–50m 63/21/17.85 | อัตโนมัติ / 15 | ระยะสั้น; ยิงรัวชนะไฟต์เร็ว | พิสทอลรอบบุกเร็ว, บังคับซื้อ | Neon, Raze, Phoenix, Reyna |
-| Ghost | 500 | 0–30m 105/30/25.5; 30–50m 87.5/25/21.25 | กึ่งอัตโนมัติ / 13 | กลางเด่น; เงียบ; แตะหัวดี | พิสทอลรอบแบบยืนมุม, เล่นช้า | Sova, Cypher, Omen, Controllers/Initiators |
-| Sheriff | 800 | 0–30m 159.5/55/46.75; 30–50m 145/50/42.5 | กึ่งอัตโนมัติ / 6 | กลาง–ไกล; one-tap หัวแรงมาก | รอบเก็บเงินแบบลุ้นคว่ำปืนใหญ่ | Chamber, Reyna, Iso, Jett |
+# Valorant Sidearm Knowledge Base
+
+## Weapon: Classic
+Type: Sidearm
+Price: 0
+Damage:
+- 0–30m: Head 78 / Body 26 / Leg 22.1
+- 30–50m: Head 66 / Body 22 / Leg 18.7
+Fire_Mode: Semi-auto + Alt-fire (3-burst)
+Magazine: 12
+Range_Profile: ใกล้–กลาง (alt-fire เด่นระยะประชิด)
+Best_Use: pistol round / eco / เก็บเงิน
+Recommended_Agents: ทุก role
+Tags: free, pistol, burst, close_range, eco
+
+---
+
+## Weapon: Bandit
+Type: Sidearm
+Price: 600
+Damage:
+- 0–10m: Head 152 / Body 39 / Leg 33
+- 10–30m: Head 128 / Body 39 / Leg 33
+- 30–50m: Head 112 / Body 34 / Leg 28
+Fire_Mode: Semi-auto
+Magazine: 8
+Range_Profile: ใกล้–กลาง (นัดแรกแม่น, one-tap ได้)
+Best_Use: pistol round / low economy ที่ต้องการลุ้น kill
+Recommended_Agents: Duelist, Initiator (สาย aim)
+Tags: pistol, precision, headshot, budget
+
+---
+
+## Weapon: Shorty
+Type: Sidearm (Shotgun)
+Price: 300
+Damage:
+- 0–7m: Head 22 / Body 11 / Leg 9.35
+- 7–15m: Head 12 / Body 6 / Leg 5.1
+- 15–50m: Head 6 / Body 3 / Leg 2.55
+Fire_Mode: Semi-auto (shotgun)
+Magazine: 2
+Range_Profile: ใกล้จัด (มุมแคบ / ใน smoke)
+Best_Use: eco / anti-rush / trap play
+Recommended_Agents: Omen, Viper, Cypher, Killjoy
+Tags: shotgun, close_range, trap, ambush
+
+---
+
+## Weapon: Frenzy
+Type: Sidearm
+Price: 450
+Damage:
+- 0–20m: Head 78 / Body 26 / Leg 22.1
+- 20–50m: Head 63 / Body 21 / Leg 17.85
+Fire_Mode: Full-auto
+Magazine: 15
+Range_Profile: ใกล้ (ยิงรัวชนะไฟต์เร็ว)
+Best_Use: pistol rush / force buy
+Recommended_Agents: Neon, Raze, Phoenix, Reyna
+Tags: pistol, fast_fire, rush, aggressive
+
+---
+
+## Weapon: Ghost
+Type: Sidearm
+Price: 500
+Damage:
+- 0–30m: Head 105 / Body 30 / Leg 25.5
+- 30–50m: Head 87.5 / Body 25 / Leg 21.25
+Fire_Mode: Semi-auto
+Magazine: 13
+Range_Profile: กลาง (เงียบ, tap หัวดี)
+Best_Use: pistol round แบบเล่นช้า / ถือมุม
+Recommended_Agents: Sova, Cypher, Omen, Initiator, Controller
+Tags: pistol, silent, mid_range, accurate
+
+---
+
+## Weapon: Sheriff
+Type: Sidearm
+Price: 800
+Damage:
+- 0–30m: Head 159.5 / Body 55 / Leg 46.75
+- 30–50m: Head 145 / Body 50 / Leg 42.5
+Fire_Mode: Semi-auto
+Magazine: 6
+Range_Profile: กลาง–ไกล (one-tap หัวแรงมาก)
+Best_Use: eco round / clutch potential
+Recommended_Agents: Chamber, Reyna, Iso, Jett
+Tags: pistol, high_damage, one_tap, eco_carry
 
 ### SMG
 
 ข้อมูลหมวดนี้ยืนยันรายชื่อจาก Riot Arsenal และค่าสถานะจาก Tracker DB; Stinger ใช้ข้อมูลเพิ่มเติมจาก Valorant Wiki เพื่อยืนยันว่าโหมดยิงเสริมเป็น 4 นัดแบบ burst. citeturn27view0turn16view0turn16view1turn23search0
 
-| อาวุธ | ราคา | ดาเมจ H/B/L | โหมดยิง / แม็ก | ระยะ/ฟิลใช้งาน | เหมาะซื้อเมื่อ | บทบาท/Agent ที่เหมาะ |
-|---|---:|---|---|---|---|---|
-| Stinger | 1100 | 0–15m 67.5/27/22.95; 15–50m 57/23/19 | อัตโนมัติ + ADS burst 4 นัด / 20 | ใกล้เด่น; ยิงรัวจัด; รีคอยล์แรงถ้าสเปรย์ยาว | บังคับซื้อ, ครึ่งซื้อ, เข้าพื้นที่เร็ว | Duelist/Initiator, Clove, Omen |
-| Spectre | 1600 | 0–15m 78/26/22.1; 15–30m 66/22/18.7; 30–50m 60/20/17 | อัตโนมัติ / 30 | ใกล้–กลาง; คุมง่าย; ยิงต่อเนื่องดี | รอบชนะพิสทอล, กันทีมประหยัด, ครึ่งซื้อ | Raze, Neon, Phoenix, Yoru, Omen |
+# Valorant SMG Knowledge Base
+
+## Weapon: Stinger
+Type: SMG
+Price: 1100
+Damage:
+- 0–15m: Head 67.5 / Body 27 / Leg 22.95
+- 15–50m: Head 57 / Body 23 / Leg 19
+Fire_Mode: Full-auto + ADS burst (4 นัด)
+Magazine: 20
+Range_Profile: ใกล้เด่นมาก (ยิงรัวแรง แต่สเปรย์ยาวคุมยาก)
+Best_Use: force buy / half-buy / rush เข้าไซต์เร็ว
+Recommended_Agents: Duelist, Initiator, Clove, Omen
+Tags: smg, close_range, fast_fire, force_buy, rush
+
+---
+
+## Weapon: Spectre
+Type: SMG
+Price: 1600
+Damage:
+- 0–15m: Head 78 / Body 26 / Leg 22.1
+- 15–30m: Head 66 / Body 22 / Leg 18.7
+- 30–50m: Head 60 / Body 20 / Leg 17
+Fire_Mode: Full-auto
+Magazine: 30
+Range_Profile: ใกล้–กลาง (คุมง่าย ยิงต่อเนื่องดี)
+Best_Use: bonus round / half-buy / กัน eco ฝั่งตรงข้าม
+Recommended_Agents: Raze, Neon, Phoenix, Yoru, Omen
+Tags: smg, balanced, mobility, bonus_round, mid_range
 
 ### ปืนลูกซอง
 
 Riot จัด Bucky และ Judge อยู่ในหมวดปืนลูกซอง; ตัวเลขสถิติอิงจาก Tracker DB. citeturn27view0turn21view7turn21view8
 
-| อาวุธ | ราคา | ดาเมจ H/B/L | โหมดยิง / แม็ก | ระยะ/ฟิลใช้งาน | เหมาะซื้อเมื่อ | บทบาท/Agent ที่เหมาะ |
-|---|---:|---|---|---|---|---|
-| Bucky | 850 | 0–8m 40/20/17; 8–12m 26/13/11.05; 12–50m 18/9/7.65 | ปั๊ม + Alt air burst / 5 | ประชิดมาก; มุมแคบ | รอบเก็บเงิน, กัน rush, ปิด choke | Cypher, Killjoy, Deadlock, Sage |
-| Judge | 1850 | 0–10m 34/17/14.45; 10–15m 20/10/8.5; 15–50m 14/7/5.95 | อัตโนมัติ / 5 | ประชิด; กดค้างได้; สโมก/มุมลึกโหด | ครึ่งซื้อ, กันทีมประหยัด, anchor site | Raze, Omen, Jett, Neon, Cypher |
+# Valorant Shotgun Knowledge Base
+
+## Weapon: Bucky
+Type: Shotgun
+Price: 850
+Damage:
+- 0–8m: Head 40 / Body 20 / Leg 17
+- 8–12m: Head 26 / Body 13 / Leg 11.05
+- 12–50m: Head 18 / Body 9 / Leg 7.65
+Fire_Mode: Pump-action + Alt-fire (air burst)
+Magazine: 5
+Range_Profile: ระยะประชิดมาก (มุมแคบ / choke point)
+Best_Use: eco round / anti-rush / trap มุมแคบ
+Recommended_Agents: Cypher, Killjoy, Deadlock, Sage
+Tags: shotgun, close_range, trap, eco, choke_control
+
+---
+
+## Weapon: Judge
+Type: Shotgun
+Price: 1850
+Damage:
+- 0–10m: Head 34 / Body 17 / Leg 14.45
+- 10–15m: Head 20 / Body 10 / Leg 8.5
+- 15–50m: Head 14 / Body 7 / Leg 5.95
+Fire_Mode: Full-auto
+Magazine: 5
+Range_Profile: ประชิด (ยิงต่อเนื่อง, เล่นใน smoke / มุมลึกโหด)
+Best_Use: half-buy / anchor site / anti-eco
+Recommended_Agents: Raze, Omen, Jett, Neon, Cypher
+Tags: shotgun, close_range, anchor, anti_rush, aggressive
 
 ### ปืนไรเฟิล
 
 Riot Arsenal จัด Bulldog, Guardian, Phantom และ Vandal ไว้เป็นไรเฟิล; Bulldog ใช้ข้อมูลเพิ่มจาก Valorant Wiki เพื่อยืนยัน burst 3 นัดใน ADS, ส่วน Phantom/Vandal ใช้คำอธิบายจาก Valorant Wiki เพื่อช่วยอธิบายบทบาทระยะยิง. citeturn27view0turn16view2turn21view0turn22view2turn17view0turn23search1turn0search4turn0search5
 
-| อาวุธ | ราคา | ดาเมจ H/B/L | โหมดยิง / แม็ก | ระยะ/ฟิลใช้งาน | เหมาะซื้อเมื่อ | บทบาท/Agent ที่เหมาะ |
-|---|---:|---|---|---|---|---|
-| Bulldog | 2050 | 0–50m 115.5/35/29.75 | อัตโนมัติ + ADS burst 3 นัด / 24 | กลาง–ไกล; budget rifle ที่คุ้มมาก | ครึ่งซื้อ, โบนัสรอบ | Initiator/Controller เล่นระยะกลาง |
-| Guardian | 2250 | 0–50m 195/65/48.75 | กึ่งอัตโนมัติ / 12 | กลาง–ไกล; นัดแรกแม่นมาก | ครึ่งซื้อ, คนยิงคม | Sentinel, Initiator, Chamber |
-| Phantom | 2900 | 0–20m 156/39/33.15; 20–50m 140/35/29.75 | อัตโนมัติ / 30 | ใกล้–กลาง; silenced; spray ดี | ซื้อเต็ม, กันทีมประหยัด, spam smoke | Omen, Viper, Raze, Phoenix |
-| Vandal | 2900 | 0–50m 160/40/34 | อัตโนมัติ / 25 | กลาง–ไกล; ไม่มีฟอลล์ออฟ | ซื้อเต็มมาตรฐาน | ทุกบทบาท โดยเฉพาะ Jett, Reyna, Iso, Chamber |
+# Valorant Rifle Knowledge Base
+
+## Weapon: Bulldog
+Type: Rifle
+Price: 2050
+Damage:
+- 0–50m: Head 115.5 / Body 35 / Leg 29.75
+Fire_Mode: Full-auto + ADS burst (3 นัด)
+Magazine: 24
+Range_Profile: กลาง–ไกล (budget rifle คุ้มค่า)
+Best_Use: half-buy / bonus round / คุมระยะกลาง
+Recommended_Agents: Initiator, Controller
+Tags: rifle, budget, mid_range, burst, half_buy
+
+---
+
+## Weapon: Guardian
+Type: Rifle
+Price: 2250
+Damage:
+- 0–50m: Head 195 / Body 65 / Leg 48.75
+Fire_Mode: Semi-auto
+Magazine: 12
+Range_Profile: กลาง–ไกล (นัดแรกแม่นมาก, เน้น tap)
+Best_Use: half-buy / ผู้เล่น aim คม / anti-light
+Recommended_Agents: Sentinel, Initiator, Chamber
+Tags: rifle, precision, tap, long_range
+
+---
+
+## Weapon: Phantom
+Type: Rifle
+Price: 2900
+Damage:
+- 0–20m: Head 156 / Body 39 / Leg 33.15
+- 20–50m: Head 140 / Body 35 / Leg 29.75
+Fire_Mode: Full-auto (silenced)
+Magazine: 30
+Range_Profile: ใกล้–กลาง (spray ดี, ยิงใน smoke เงียบ)
+Best_Use: full buy / smoke spam / close-mid fights
+Recommended_Agents: Omen, Viper, Raze, Phoenix
+Tags: rifle, spray, silent, close_range, full_buy
+
+---
+
+## Weapon: Vandal
+Type: Rifle
+Price: 2900
+Damage:
+- 0–50m: Head 160 / Body 40 / Leg 34
+Fire_Mode: Full-auto
+Magazine: 25
+Range_Profile: กลาง–ไกล (one-tap head ทุกระยะ)
+Best_Use: full buy มาตรฐาน / long duel
+Recommended_Agents: ทุก role (Jett, Reyna, Iso, Chamber เด่น)
+Tags: rifle, one_tap, long_range, standard
 
 ### ปืนสไนเปอร์
 
 Marshal, Outlaw และ Operator อยู่ในหมวดสไนเปอร์ตาม Riot Arsenal; Marshal/Outlaw ใช้คำอธิบายจาก Valorant Wiki เพื่อยืนยันบทบาทระยะและ target ที่เหมาะ, Operator ใช้คำอธิบายจาก Valorant Wiki ยืนยันว่าเป็น bolt-action และมี dual zoom. citeturn27view0turn21view1turn21view2turn21view3turn25search0turn25search1turn0search6
 
-| อาวุธ | ราคา | ดาเมจ H/B/L | โหมดยิง / แม็ก | ระยะ/ฟิลใช้งาน | เหมาะซื้อเมื่อ | บทบาท/Agent ที่เหมาะ |
-|---|---:|---|---|---|---|---|
-| Marshal | 950 | 0–50m 202/101/85.85 | สไนเปอร์นัดเดี่ยว / 5 | ไกลเด่น; ADS แม่นมาก | รอบเก็บเงิน, โบนัสรอบ | Jett, Chamber, คนถือมุมยาว |
-| Outlaw | 2400 | 0–50m 238/140/119 | สไนเปอร์ 2 นัดต่อแม็ก / 2 | กลาง–ไกล; ลงโทษเกราะเบา | ครึ่งซื้อ, ลงโทษทีมเกราะเบา | Jett, Chamber, ดีเฟนส์ถือเลนยาว |
-| Operator | 4700 | 0–50m 255/150/120 | bolt-action, dual zoom / 5 | ไกลจัด; คุมพื้นที่ | ซื้อเต็มเฉพาะทาง | Jett, Chamber, ทีมเน้นคุมเลนยาว |
+# Valorant Sniper Knowledge Base
+
+## Weapon: Marshal
+Type: Sniper
+Price: 950
+Damage:
+- 0–50m: Head 202 / Body 101 / Leg 85.85
+Fire_Mode: Bolt-action (single shot)
+Magazine: 5
+Range_Profile: ไกลเด่น (ADS แม่นมาก, เคลื่อนที่คล่อง)
+Best_Use: eco round / bonus round / ถือมุมยาว
+Recommended_Agents: Jett, Chamber, ผู้เล่นสายถือมุม
+Tags: sniper, eco, fast, long_range, hold_angle
+
+---
+
+## Weapon: Outlaw
+Type: Sniper
+Price: 2400
+Damage:
+- 0–50m: Head 238 / Body 140 / Leg 119
+Fire_Mode: Double-shot (2 นัดต่อแม็ก)
+Magazine: 2
+Range_Profile: กลาง–ไกล (ลงโทษศัตรูที่ใช้เกราะเบา)
+Best_Use: half-buy / anti-light armor / defense long angle
+Recommended_Agents: Jett, Chamber, ผู้เล่น defense
+Tags: sniper, anti_light, half_buy, long_range
+
+---
+
+## Weapon: Operator
+Type: Sniper
+Price: 4700
+Damage:
+- 0–50m: Head 255 / Body 150 / Leg 120
+Fire_Mode: Bolt-action + Dual zoom
+Magazine: 5
+Range_Profile: ไกลจัด (one-shot body เกือบทุกสถานการณ์)
+Best_Use: full buy / คุมพื้นที่ / long sightline
+Recommended_Agents: Jett, Chamber, ทีมที่เน้น control map
+Tags: sniper, one_shot, expensive, map_control
 
 ### อาวุธหนัก
 
 Riot จัด Ares และ Odin อยู่ในหมวดอาวุธหนัก; ค่าสถานะอิงจาก Tracker DB และคำอธิบายบทบาทการกดดัน/ถือไซต์จาก Valorant Wiki. citeturn27view0turn22view0turn22view1turn25search2turn25search3turn25search11
 
-| อาวุธ | ราคา | ดาเมจ H/B/L | โหมดยิง / แม็ก | ระยะ/ฟิลใช้งาน | เหมาะซื้อเมื่อ | บทบาท/Agent ที่เหมาะ |
-|---|---:|---|---|---|---|---|
-| Ares | 1600 | 0–30m 75/30/25.5; 30–50m 70/28/23.8 | อัตโนมัติ / 50 | กลาง; spam และ suppress ดี | ครึ่งซื้อ, กัน rush, ยิงทะลุ | Sova, Fade, Cypher, anchor site |
-| Odin | 3200 | 0–30m 95/38/32.3; 30–50m 77.5/31/26.35 | อัตโนมัติ / 100 | กลาง–ไกลผ่านกำแพง; ถือไซต์โหด | ซื้อเต็มแบบเฉพาะทาง | Sova, Fade, Cypher, Killjoy |
+# Valorant Heavy Weapon Knowledge Base
+
+## Weapon: Ares
+Type: Heavy
+Price: 1600
+Damage:
+- 0–30m: Head 75 / Body 30 / Leg 25.5
+- 30–50m: Head 70 / Body 28 / Leg 23.8
+Fire_Mode: Full-auto
+Magazine: 50
+Range_Profile: กลาง (ยิงต่อเนื่อง + wallbang ดี)
+Best_Use: half-buy / anti-rush / ยิงทะลุกำแพง (spam lanes)
+Recommended_Agents: Sova, Fade, Cypher, ผู้เล่น anchor site
+Tags: heavy, spam, wallbang, defense, half_buy
+
+---
+
+## Weapon: Odin
+Type: Heavy
+Price: 3200
+Damage:
+- 0–30m: Head 95 / Body 38 / Leg 32.3
+- 30–50m: Head 77.5 / Body 31 / Leg 26.35
+Fire_Mode: Full-auto
+Magazine: 100
+Range_Profile: กลาง–ไกล (ยิงทะลุกำแพงแรง, suppress หนัก)
+Best_Use: full buy เฉพาะทาง / คุมไซต์ / map ที่มี wallbang
+Recommended_Agents: Sova, Fade, Cypher, Killjoy
+Tags: heavy, spam, wallbang, anchor, map_control
 
 ### อาวุธประชิด
 
 หน้า Arsenal ทางการยืนยันชื่อและหมวดของ Tactical Knife; หน้า Tracker DB ระบุว่าไม่มี weapon stats ให้ Standard Melee จึงใช้ตัวเลข damage / run speed จาก Valorant Wiki. citeturn27view0turn19view0turn22view3
 
-| อาวุธ | ราคา | ดาเมจ | โหมดยิง | ระยะ/ฟิลใช้งาน | เหมาะใช้เมื่อ | บทบาท/Agent ที่เหมาะ |
-|---|---:|---|---|---|---|---|
-| Tactical Knife | 0 | 0–8m: ด้านหน้า 50/75 (ฟัน/แทง), ด้านหลัง 100/150 | ฟัน / แทง | ประชิดมาก; วิ่งเร็วสุด 6.75 m/s | หมุนตำแหน่งเร็ว, ทำลายสิ่งของ, หมดกระสุน | ทุกบทบาท |
+# Valorant Melee Knowledge Base
+
+## Weapon: Tactical Knife
+Type: Melee
+Price: 0
+Damage:
+- 0–8m: Front Slash 50 / Front Stab 75
+- 0–8m: Back Slash 100 / Back Stab 150
+Fire_Mode: Slash (โจมตีเบา) / Stab (โจมตีหนัก)
+Movement_Speed: 6.75 m/s (เร็วที่สุดในเกม)
+Range_Profile: ประชิดมาก (ต้องเข้าใกล้เป้าหมาย)
+Best_Use:
+- หมุนตำแหน่งเร็ว (rotate)
+- ทำลายสิ่งของ (เช่น utility)
+- ใช้ตอนกระสุนหมด
+Recommended_Agents: ทุก role
+Tags: melee, mobility, fast_rotate, close_range, utility
 
 ## คำแนะนำใช้งานรายอาวุธ
 
@@ -188,20 +449,109 @@ Riot จัด Ares และ Odin อยู่ในหมวดอาวุธ
 - ถ้ารอบนี้ต้อง save เพื่อให้รอบหน้ามีไรเฟิลครบ 5 คน อย่าทำลายแผนด้วยการซื้อ Sheriff คนเดียวแบบไร้แผน  
 - การชนะด้วยปืนด้อยกว่ามักมาจาก **ระยะที่เหมาะ + utility + การเทรด** มากกว่ามาจากราคาปืน
 
-```mermaid
-flowchart TD
-    A[เริ่ม Buy Phase] --> B{เงินและแผนรอบนี้}
-    B -->|พิสทอลรอบ| C[Classic + ยูทิล / Ghost / Bandit / Frenzy]
-    B -->|รอบเก็บเงิน| D[Classic / Shorty / Sheriff / Marshal]
-    B -->|รอบครึ่งซื้อ| E[Stinger / Spectre / Bulldog / Guardian / Outlaw]
-    B -->|รอบซื้อเต็ม| F[Vandal / Phantom + เกราะหนัก + ยูทิล]
-    F --> G{ต้องคุมเลนยาวหรือไม่}
-    G -->|ใช่| H[Operator]
-    G -->|ไม่ใช่| I[Phantom หรือ Vandal ตามระยะที่คาดว่าจะสู้]
-    E --> J{ทีมจะชนเร็วหรือไม่}
-    J -->|ใช่| K[Stinger / Spectre]
-    J -->|ไม่ใช่| L[Bulldog / Guardian / Marshal]
-```
+# Valorant Buy Strategy Knowledge Base
+
+## Scenario: Pistol Round
+Condition: เริ่มเกม / เครดิตน้อย
+Options:
+- Classic + Utility
+- Ghost
+- Bandit
+- Frenzy
+Strategy:
+- เลือกตาม role และแผนทีม
+- Duelist → Frenzy / aggressive
+- Controller / Initiator → Ghost / Utility
+Tags: pistol, early_game, low_credits
+
+---
+
+## Scenario: Eco Round (รอบเก็บเงิน)
+Condition: เงินน้อย / ไม่คุ้มสู้
+Options:
+- Classic
+- Shorty
+- Sheriff
+- Marshal
+Strategy:
+- เล่น trap / ambush
+- พยายามเก็บปืนศัตรู
+- ไม่ force fight โดยไม่จำเป็น
+Tags: eco, save, trap, low_risk
+
+---
+
+## Scenario: Half Buy / Force Buy
+Condition: เงินไม่พอ full แต่ต้องสู้
+Options:
+- Stinger
+- Spectre
+- Bulldog
+- Guardian
+- Outlaw
+Next Decision: รูปแบบการเล่นของทีม
+Tags: half_buy, force_buy, mid_credits
+
+---
+
+## Scenario: Half Buy - Fast Play
+Condition: ทีมต้องการ rush / เข้าพื้นที่เร็ว
+Recommended_Weapons:
+- Stinger
+- Spectre
+Strategy:
+- เล่นเร็ว ปิด round ไว
+- ใช้ utility เปิดทาง
+Tags: rush, fast_play, smg
+
+---
+
+## Scenario: Half Buy - Slow Play
+Condition: ทีมไม่รีบ / เล่น control
+Recommended_Weapons:
+- Bulldog
+- Guardian
+- Marshal
+Strategy:
+- ถือมุม
+- เล่น pick ทีละตัว
+Tags: slow_play, control, precision
+
+---
+
+## Scenario: Full Buy
+Condition: เงินเพียงพอ
+Options:
+- Vandal
+- Phantom
+- Heavy Armor
+- Full Utility
+Next Decision: ระยะที่ต้องเล่น
+Tags: full_buy, rifle, standard
+
+---
+
+## Scenario: Full Buy - Long Range Control
+Condition: ต้องคุมเลนยาว
+Recommended_Weapons:
+- Operator
+Strategy:
+- hold angle
+- pick first blood
+Tags: sniper, long_range, control
+
+---
+
+## Scenario: Full Buy - Standard Fight
+Condition: ระยะกลาง / ไม่เน้น sniper
+Recommended_Weapons:
+- Vandal
+- Phantom
+Strategy:
+- เลือกตามระยะ:
+  - ใกล้ → Phantom
+  - ไกล → Vandal
+Tags: rifle, standard, mid_range
 
 ## คำแนะนำตามบทบาท
 

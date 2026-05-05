@@ -62,7 +62,13 @@ def main():
     agent = create_tool_calling_agent(llm, tools, prompt)
     
     # ลบส่วน memory เก่าออก และใช้ verbose=True เพื่อโชว์ Log (ตามเกณฑ์อาจารย์)
-    agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True)
+    agent_executor = AgentExecutor(
+    agent=agent, 
+    tools=tools, 
+    verbose=True,
+    max_iterations=10,          # 1. เพิ่มจำนวนครั้งที่ให้ Agent คิด (ค่าเริ่มต้นมักจะเป็น 3-5)
+    handle_parsing_errors=True  # 2. ป้องกัน Agent พังเวลา LLM คืนค่าฟอร์แมตแปลกๆ มา
+)
     
     # 6. สมุดจดประวัติการคุยแบบ Manual
     chat_history = []

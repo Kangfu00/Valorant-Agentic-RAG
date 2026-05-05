@@ -11,39 +11,290 @@ Riot ปัจจุบันแสดงแผนที่มาตรฐาน
 
 ## ตารางเปรียบเทียบแบบเร็ว
 
-| Map | Sites | Rotation speed | Favored playstyle | Unique mechanic |
-|---|---:|---|---|---|
-| Ascent | 2 | กลาง | ช้า-ไฮบริด | ประตูไซต์ที่ปิด/พังได้ |
-| Bind | 2 | เร็ว | ไฟต์เร็ว/เฟกหมุน | Teleporters, ไม่มี mid |
-| Haven | 3 | กลาง-เร็ว | ไฮบริด/เฟกหนัก | 3 sites |
-| Split | 2 | เร็ว | ช้าแล้วค่อย split | Ropes + vertical mid |
-| Icebox | 2 | กลาง | ไฮบริด-ช้า | Ziplines + vertical plants |
-| Breeze | 2 | กลาง | ไฮบริด-ไว | พื้นที่เปิดกว้าง/ยิงไกลมาก |
-| Fracture | 2 | เร็ว | เร็ว/บีบสองด้าน | Attacker spawns สองฝั่ง + ziplines |
-| Pearl | 2 | ช้า | ช้า-คุม mid | ไม่มี gimmick พิเศษ |
-| Lotus | 3 | เร็ว | เร็ว/กลุ่มใหญ่ | Rotating doors + breakable wall + silent drop |
-| Sunset | 2 | กลาง | ช้า-คุม mid | ประตูทำลายได้ + กล่อง jump-up |
-| Abyss | 2 | กลาง | ช้า-แม่นระยะไกล | Death drops |
-| Corrode | 2 | กลาง | ไฮบริด-คุมมุม | เลย์เอาต์ดั้งเดิมแต่ layered defense หนาแน่น |
+# Valorant Map Knowledge Base
+
+## Map: Ascent
+Sites: 2
+Rotation_Speed: Medium
+Playstyle: Slow / Hybrid
+Unique_Features:
+- ประตูไซต์เปิด-ปิดได้ (breakable doors)
+Strategy:
+- คุม mid สำคัญมาก
+- เล่น split เข้า A/B
+Tags: mid_control, hybrid, slow_play
+
+---
+
+## Map: Bind
+Sites: 2
+Rotation_Speed: Fast
+Playstyle: Fast / Fake Rotation
+Unique_Features:
+- Teleporters
+- ไม่มี mid
+Strategy:
+- ใช้ teleport หลอก rotation
+- rush หรือ fake บ่อย
+Tags: fast_play, teleport, fake
+
+---
+
+## Map: Haven
+Sites: 3
+Rotation_Speed: Medium-Fast
+Playstyle: Hybrid / Heavy Fake
+Unique_Features:
+- มี 3 sites
+Strategy:
+- fake site สำคัญ
+- rotate เร็ว
+Tags: triple_site, fake, flexible
+
+---
+
+## Map: Split
+Sites: 2
+Rotation_Speed: Fast
+Playstyle: Slow → Split Push
+Unique_Features:
+- Ropes
+- Vertical mid
+Strategy:
+- คุม mid ก่อน
+- split เข้าไซต์
+Tags: vertical, mid_control, split
+
+---
+
+## Map: Icebox
+Sites: 2
+Rotation_Speed: Medium
+Playstyle: Hybrid / Slow
+Unique_Features:
+- Ziplines
+- Vertical plant positions
+Strategy:
+- ต้องเช็คมุมเยอะ
+- ใช้ utility เยอะ
+Tags: vertical, utility_heavy
+
+---
+
+## Map: Breeze
+Sites: 2
+Rotation_Speed: Medium
+Playstyle: Hybrid / Fast
+Unique_Features:
+- พื้นที่เปิดกว้าง
+Strategy:
+- เน้น long range fight
+- sniper สำคัญ
+Tags: open_map, long_range, sniper
+
+---
+
+## Map: Fracture
+Sites: 2
+Rotation_Speed: Fast
+Playstyle: Fast / Multi-direction Attack
+Unique_Features:
+- Attacker spawn สองฝั่ง
+- Ziplines
+Strategy:
+- บุกสองด้านพร้อมกัน
+- กดดัน defender
+Tags: split_attack, fast_play, chaos
+
+---
+
+## Map: Pearl
+Sites: 2
+Rotation_Speed: Slow
+Playstyle: Slow / Mid Control
+Unique_Features:
+- ไม่มี gimmick พิเศษ
+Strategy:
+- เล่น control map
+- push ช้า
+Tags: control, slow_play
+
+---
+
+## Map: Lotus
+Sites: 3
+Rotation_Speed: Fast
+Playstyle: Fast / Group Push
+Unique_Features:
+- ประตูหมุน
+- กำแพงพังได้
+- silent drop
+Strategy:
+- rotate ไว
+- เล่น group
+Tags: fast_rotation, triple_site, utility
+
+---
+
+## Map: Sunset
+Sites: 2
+Rotation_Speed: Medium
+Playstyle: Slow / Mid Control
+Unique_Features:
+- ประตูพังได้
+- กล่อง jump-up
+Strategy:
+- คุม mid
+- เล่นมุม
+Tags: mid_control, structured
+
+---
+
+## Map: Abyss
+Sites: 2
+Rotation_Speed: Medium
+Playstyle: Slow / Precision
+Unique_Features:
+- ตกแล้วตาย (death drops)
+Strategy:
+- aim สำคัญ
+- positioning ต้องดี
+Tags: aim, precision, risky_map
+
+---
+
+## Map: Corrode
+Sites: 2
+Rotation_Speed: Medium
+Playstyle: Hybrid / Angle Control
+Unique_Features:
+- layered defense
+Strategy:
+- คุมมุม
+- ใช้ utility ดันพื้นที่
+Tags: defense, angle_control, hybrid
 
 หมายเหตุ: **จำนวนไซต์และกลไกพิเศษ** อ้างอิงจากหน้า Maps ของ Riot; ส่วน **rotation speed** และ **favored playstyle** เป็นการสังเคราะห์เชิงกลยุทธ์จากเลย์เอาต์แผนที่และแนวทางเล่นที่ Riot/Red Bull อธิบายไว้ ไม่ใช่คำจัดหมวดหมู่อย่างเป็นทางการของ Riot. citeturn5view0turn6view0turn8view0turn9view0
 
 ## แผนผัง execute ทั่วไปของฝ่ายบุก
 
-```mermaid
-flowchart LR
-    A[Default: probe extremities + take orb/info] --> B{ได้ key space หรือยัง?}
-    B -- ได้ --> C[Controller smoke choke สำคัญ]
-    B -- ยัง --> A2[Re-clear mid / reset tempo]
-    C --> D[Initiator clear close angles]
-    D --> E[Duelist / first contact เข้าไซต์]
-    E --> F[Plant + anti-flank utility]
-    F --> G{ชนะ post-plant แบบไหน?}
-    G -- main control --> H[ถอยไปเล่น crossfire]
-    G -- site control --> I[ค้างในไซต์ 2-3 คน]
-    H --> J[โยก 1 คนตัด retake lane]
-    I --> J
-```
+# Attack Execution Strategy Knowledge Base
+
+## Phase 1: Default Setup
+Objective:
+- Probe extremities
+- Gather information
+- Take orb control
+
+Strategy:
+- กระจายผู้เล่นเพื่อเก็บข้อมูล
+- ใช้ utility เช็คตำแหน่งศัตรู
+- ห้าม commit เร็วเกินไป
+
+Next Decision: ได้พื้นที่สำคัญ (key space) หรือยัง
+Tags: default, info_gathering, map_control
+
+---
+
+## Phase 2: Space Control Decision
+Condition: ได้ key space หรือยัง
+
+- If: ได้แล้ว
+  Action: ไป Execute (Phase 3)
+
+- If: ยังไม่ได้
+  Action:
+  - Re-clear mid
+  - Reset tempo
+  - เล่นช้าลงเพื่อ bait utility ฝั่งตรงข้าม
+
+Tags: mid_control, tempo, decision
+
+---
+
+## Phase 3: Execute Setup
+Role: Controller
+Objective:
+- ปิด choke point สำคัญ
+
+Action:
+- ใช้ smoke ปิด vision
+- ตัดมุม defender
+
+Tags: controller, smoke, execute
+
+---
+
+## Phase 4: Entry Preparation
+Role: Initiator
+Objective:
+- เคลียร์มุมใกล้ (close angles)
+
+Action:
+- ใช้ flash / stun / reveal
+- เปิดทางให้ Duelist เข้า
+
+Tags: initiator, entry_support, utility
+
+---
+
+## Phase 5: Site Entry
+Role: Duelist
+Objective:
+- เข้า site และสร้างพื้นที่
+
+Action:
+- เป็น first contact
+- trade kill
+- เปิดพื้นที่ให้ทีม
+
+Tags: duelist, entry, first_contact
+
+---
+
+## Phase 6: Post-Plant Setup
+Objective:
+- วาง spike
+- กัน flank
+
+Action:
+- วาง utility ปิดทาง flank
+- ตั้งตำแหน่ง post-plant
+
+Next Decision: จะเล่น post-plant แบบไหน
+Tags: post_plant, flank_control
+
+---
+
+## Phase 7: Post-Plant Decision
+
+### Option 1: Main Control (เล่นนอกไซต์)
+Condition: คุม main ได้
+Action:
+- ถอยออกไปเล่น crossfire
+- เล่น delay
+Tags: crossfire, safe_play
+
+---
+
+### Option 2: Site Control (ยืนในไซต์)
+Condition: คุมไซต์ได้
+Action:
+- อยู่ในไซต์ 2–3 คน
+- hold มุม close
+Tags: site_hold, aggressive_defense
+
+---
+
+## Phase 8: Anti-Retake Adjustment
+Objective:
+- ป้องกันการ retake
+
+Action:
+- ส่ง 1 คนไปตัด lane retake
+- กัน flank เพิ่ม
+
+Tags: anti_retake, map_control
 
 ## คู่มือรายแผนที่
 

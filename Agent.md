@@ -525,37 +525,208 @@ Vyse’s current kit and trap-support profile are supported by current kit refer
 
 The table below condenses the already-cited sections above into one roster snapshot. Riot’s current public agent directory supports the roster count used here. citeturn1search1turn17search0
 
-| Agent | Role | One-line playstyle |
-|---|---|---|
-| Astra | Controller | Global star-based controller who flexes smokes, stun, and pull from anywhere. |
-| Breach | Initiator | Through-wall CC initiator who starts fights with stun, flash, and displacement. |
-| Brimstone | Controller | Straightforward tempo controller with reliable smokes and strong spike denial. |
-| Chamber | Sentinel | Precision sentinel who takes a first pick and escapes with teleport insurance. |
-| Clove | Controller | Aggressive controller who keeps smoking after death and snowballs off fights. |
-| Cypher | Sentinel | Information sentinel built around surveillance, flank control, and layered traps. |
-| Deadlock | Sentinel | Area-denial sentinel that physically blocks, slows, and captures committed pushes. |
-| Fade | Initiator | Info-and-debuff initiator who chains reveal into nearsight and tether pressure. |
-| Gekko | Initiator | Retrieval initiator who cycles reusable creature utility through long rounds. |
-| Harbor | Controller | Tempo controller with broad moving walls and commit-heavy execute support. |
-| Iso | Duelist | Duel-heavy duelist who wins first contact and snowballs with shield tempo. |
-| Jett | Duelist | First-contact entry with fast isolation tools and elite survive-the-trade mobility. |
-| KAY/O | Initiator | Anti-utility initiator who suppresses setups and supports fast flash swings. |
-| Killjoy | Sentinel | Gadget sentinel who punishes pushes with layered bot, turret, and swarm setups. |
-| Miks | Controller | Hybrid controller-support who smokes, buffs, heals, and disrupts in one kit. |
-| Neon | Duelist | Speed duelist who overwhelms defenders with sprint, wall, slide, and concuss tempo. |
-| Omen | Controller | Self-sufficient controller mixing precise smokes with paranoia and teleport pressure. |
-| Phoenix | Duelist | Self-sustaining entry duelist who flashes for himself and heals through fire. |
-| Raze | Duelist | Explosive space-maker who clears cover and bursts onto sites with satchel mobility. |
-| Reyna | Duelist | Feast-or-famine carry duelist who snowballs brutally once she gets kills. |
-| Sage | Sentinel | Sustain-and-stall sentinel focused on wall, slow, heal, and revive value. |
-| Skye | Initiator | Hybrid flash-scout-support initiator who enables teammates with info and healing. |
-| Sova | Initiator | Precision information initiator who converts recon into damage and ult kills. |
-| Tejo | Initiator | Long-range ordnance initiator who forces defenders off angles before contact. |
-| Veto | Sentinel | Anti-utility sentinel with trap pressure and active repositioning tools. |
-| Viper | Controller | Territorial, fuel-based controller who wins by defining map geometry. |
-| Vyse | Sentinel | Trap isolation sentinel who splits fights and punishes pathing mistakes. |
-| Waylay | Duelist | Hinder-based pressure duelist with explosive entry and safe snapback resets. |
-| Yoru | Duelist | Deception duelist who wins with misdirection, teleports, and split attention. |
+# Valorant Agents Knowledge Base
+
+## Agent: Astra
+Role: Controller
+Playstyle: Global star-based controller who flexes smokes, stun, and pull from anywhere.
+Tags: global_control, utility_flex, map_wide, crowd_control
+
+---
+
+## Agent: Breach
+Role: Initiator
+Playstyle: Through-wall CC initiator who starts fights with stun, flash, and displacement.
+Tags: cc, stun, flash, wall_penetration, engage
+
+---
+
+## Agent: Brimstone
+Role: Controller
+Playstyle: Straightforward tempo controller with reliable smokes and strong spike denial.
+Tags: smokes, postplant, tempo, simple_execution
+
+---
+
+## Agent: Chamber
+Role: Sentinel
+Playstyle: Precision sentinel who takes a first pick and escapes with teleport insurance.
+Tags: sniper, pick_off, escape, teleport, defensive
+
+---
+
+## Agent: Clove
+Role: Controller
+Playstyle: Aggressive controller who keeps smoking after death and snowballs off fights.
+Tags: aggressive, post_death_utility, snowball, smokes
+
+---
+
+## Agent: Cypher
+Role: Sentinel
+Playstyle: Information sentinel built around surveillance, flank control, and layered traps.
+Tags: info, trap, flank_control, surveillance
+
+---
+
+## Agent: Deadlock
+Role: Sentinel
+Playstyle: Area-denial sentinel that physically blocks, slows, and captures committed pushes.
+Tags: area_denial, slow, block, anti_push
+
+---
+
+## Agent: Fade
+Role: Initiator
+Playstyle: Info-and-debuff initiator who chains reveal into nearsight and tether pressure.
+Tags: reveal, debuff, chain_cc, pressure
+
+---
+
+## Agent: Gekko
+Role: Initiator
+Playstyle: Retrieval initiator who cycles reusable creature utility through long rounds.
+Tags: reusable_utility, sustain, utility_cycle
+
+---
+
+## Agent: Harbor
+Role: Controller
+Playstyle: Tempo controller with broad moving walls and commit-heavy execute support.
+Tags: wall, execute, tempo, map_control
+
+---
+
+## Agent: Iso
+Role: Duelist
+Playstyle: Duel-heavy duelist who wins first contact and snowballs with shield tempo.
+Tags: duelist, shield, first_fight, snowball
+
+---
+
+## Agent: Jett
+Role: Duelist
+Playstyle: First-contact entry with fast isolation tools and elite survive-the-trade mobility.
+Tags: entry, mobility, dash, first_contact
+
+---
+
+## Agent: KAY/O
+Role: Initiator
+Playstyle: Anti-utility initiator who suppresses setups and supports fast flash swings.
+Tags: suppress, anti_utility, flash, disrupt
+
+---
+
+## Agent: Killjoy
+Role: Sentinel
+Playstyle: Gadget sentinel who punishes pushes with layered bot, turret, and swarm setups.
+Tags: turret, trap, lockdown, anti_push
+
+---
+
+## Agent: Miks
+Role: Controller
+Playstyle: Hybrid controller-support who smokes, buffs, heals, and disrupts in one kit.
+Tags: hybrid, support, heal, buff, utility
+
+---
+
+## Agent: Neon
+Role: Duelist
+Playstyle: Speed duelist who overwhelms defenders with sprint, wall, slide, and concuss tempo.
+Tags: speed, rush, entry, stun, fast_play
+
+---
+
+## Agent: Omen
+Role: Controller
+Playstyle: Self-sufficient controller mixing precise smokes with paranoia and teleport pressure.
+Tags: smokes, teleport, mindgame, solo_play
+
+---
+
+## Agent: Phoenix
+Role: Duelist
+Playstyle: Self-sustaining entry duelist who flashes for himself and heals through fire.
+Tags: self_heal, flash, entry, sustain
+
+---
+
+## Agent: Raze
+Role: Duelist
+Playstyle: Explosive space-maker who clears cover and bursts onto sites with satchel mobility.
+Tags: explosive, entry, mobility, clear_angle
+
+---
+
+## Agent: Reyna
+Role: Duelist
+Playstyle: Feast-or-famine carry duelist who snowballs brutally once she gets kills.
+Tags: carry, snowball, self_sustain, frag
+
+---
+
+## Agent: Sage
+Role: Sentinel
+Playstyle: Sustain-and-stall sentinel focused on wall, slow, heal, and revive value.
+Tags: heal, revive, wall, stall
+
+---
+
+## Agent: Skye
+Role: Initiator
+Playstyle: Hybrid flash-scout-support initiator who enables teammates with info and healing.
+Tags: flash, scout, heal, support
+
+---
+
+## Agent: Sova
+Role: Initiator
+Playstyle: Precision information initiator who converts recon into damage and ult kills.
+Tags: recon, info, long_range, ult_combo
+
+---
+
+## Agent: Tejo
+Role: Initiator
+Playstyle: Long-range ordnance initiator who forces defenders off angles before contact.
+Tags: zoning, long_range, pressure, pre_engage
+
+---
+
+## Agent: Veto
+Role: Sentinel
+Playstyle: Anti-utility sentinel with trap pressure and active repositioning tools.
+Tags: anti_utility, trap, reposition
+
+---
+
+## Agent: Viper
+Role: Controller
+Playstyle: Territorial, fuel-based controller who wins by defining map geometry.
+Tags: toxic, zone_control, fuel, map_control
+
+---
+
+## Agent: Vyse
+Role: Sentinel
+Playstyle: Trap isolation sentinel who splits fights and punishes pathing mistakes.
+Tags: isolate, trap, punish, control
+
+---
+
+## Agent: Waylay
+Role: Duelist
+Playstyle: Hinder-based pressure duelist with explosive entry and safe snapback resets.
+Tags: hinder, entry, reset, pressure
+
+---
+
+## Agent: Yoru
+Role: Duelist
+Playstyle: Deception duelist who wins with misdirection, teleports, and split attention.
+Tags: fake, teleport, mindgame, outplay
 
 ## Open questions and limitations
 

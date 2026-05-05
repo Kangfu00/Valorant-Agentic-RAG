@@ -11,14 +11,76 @@
 
 ตารางนี้สรุป “ของที่เปลี่ยนจริง” ใน 12.08 และแปลผลเชิงการเล่นให้สั้นที่สุด โดยยึด Riot patch notes เป็นหลัก และใช้บทสรุปจากสื่อ esports เป็นแหล่งประกอบเท่านั้น citeturn2view0turn2view1turn2view3
 
-| หมวด | สิ่งที่เปลี่ยนใน 12.08 | ผลในทางปฏิบัติ |
-|---|---|---|
-| Balance | **ไม่มี** buff/nerf/rework ฝั่ง Agent หรือ Weapon แบบตรง ๆ ใน patch notes | เมตา 5v5 เปลี่ยนเพราะ **map pool** และ **โหมดใหม่** ไม่ใช่เพราะค่าสเตตัส/ราคา/สกิลโดนแก้ |
-| Map Rotation | **Ascent IN**, **Bind OUT** ใน Competitive + Deathmatch | ranked/premier ต้องกลับไปซ้อม mid control, anti-operator utility, และ sentinel anchor setups บน Ascent |
-| New Mode | **Skirmish: Ascension** เปิดเป็น ranked-limited mode สำหรับ Act 3 | ส่งผลต่อการฝึก aim/clutch/flash timing แต่ไม่ใช่ตัวแทนเมตา 5v5 เต็มรูปแบบ |
-| LTM Rotation | **Knockout ออก** | ผู้เล่นสายโหมดพิเศษจะถูกพาไปโฟกัส Skirmish แทน |
-| Premier | **Stage V26A3 กลับมา** พร้อมตาราง 6 สัปดาห์ และ playoffs หลายวัน | ทีมที่เล่นเป็นสแต็กต้องอัปเดต playbook/map prep เร็วขึ้น |
-| Bug Fixes | แก้เคสของ Miks, Veto, KAY/O, Neon, Tejo, Gekko, Yoru, Viper, Sage และปัญหา settings/replay บน PC | ลดความเพี้ยนจากบั๊กในบาง interaction; โดยรวมคือ “เพิ่มความเสถียร” มากกว่า “เปลี่ยนความเก่ง” |
+# Valorant Patch 12.08 Meta Impact Knowledge Base
+
+## Category: Balance
+Changes:
+- ไม่มี buff / nerf / rework ของ Agent หรือ Weapon
+Practical_Impact:
+- เมตา 5v5 ไม่ได้เปลี่ยนจากตัวเลขหรือสกิล
+- การเปลี่ยนแปลงมาจาก map pool และโหมดใหม่
+Tags: balance, no_change, meta_stable
+
+---
+
+## Category: Map Rotation
+Changes:
+- Ascent เข้า (IN)
+- Bind ออก (OUT)
+Practical_Impact:
+- ต้องกลับไปซ้อม:
+  - mid control
+  - anti-operator utility
+  - sentinel anchor setup
+- meta shift ไปที่ Ascent
+Tags: map_rotation, ascent, bind, meta_shift
+
+---
+
+## Category: New Mode (Skirmish: Ascension)
+Changes:
+- โหมดใหม่แบบ ranked-limited (Act 3)
+Practical_Impact:
+- ใช้ฝึก:
+  - aim
+  - clutch
+  - flash timing
+- ไม่สะท้อน meta 5v5 เต็มรูปแบบ
+Tags: skirmish, practice, aim_training
+
+---
+
+## Category: Limited Time Mode Rotation
+Changes:
+- Knockout ถูกนำออก
+Practical_Impact:
+- ผู้เล่น LTM จะย้ายไป Skirmish
+Tags: mode_removal, ltm
+
+---
+
+## Category: Premier
+Changes:
+- Stage V26A3 กลับมา
+- ระยะเวลา 6 สัปดาห์
+- มี playoffs หลายวัน
+Practical_Impact:
+- ทีมต้อง:
+  - อัปเดต playbook
+  - เตรียม map pool เร็วขึ้น
+Tags: premier, competitive, schedule
+
+---
+
+## Category: Bug Fixes
+Changes:
+- แก้ Agent:
+  - Miks, Veto, KAY/O, Neon, Tejo, Gekko, Yoru, Viper, Sage
+- แก้ settings / replay บน PC
+Practical_Impact:
+- interaction เสถียรมากขึ้น
+- meta ไม่เปลี่ยน แต่ consistency ดีขึ้น
+Tags: bugfix, stability, consistency
 
 ในเชิงรายละเอียดของ Skirmish: Ascension, Riot ระบุไว้ชัดว่าโหมดนี้เป็นประสบการณ์ competitive แบบจำกัดเวลาที่ใช้ Agent pool แบบคัดเฉพาะ, อนุญาตแค่ 1 ability ต่อ Agent, มีรอบอาวุธแบบ staged weapons และแยก ladder ระหว่าง 1v1 กับ 2v2 โดยเริ่มเล่นได้ตั้งแต่ 29 เมษายน ถึง 22 มิถุนายน 2026 บน FTW site. Roster ที่ใช้ในโหมดนี้ประกอบด้วย Jett, Waylay, Chamber, Cypher, Omen, Phoenix, Yoru, Iso, Sage, Raze, Vyse, KAY/O, Breach และ Veto พร้อมสกิลเดี่ยวที่กำหนดตายตัวต่อ Agent. citeturn3view0turn2view1turn2view2
 
@@ -26,20 +88,89 @@
 
 ไทม์ไลน์ด้านล่างสรุปวันประกาศและหน้าต่างการใช้งานที่สำคัญจาก Riot และ FTW อย่างเป็นลำดับเวลา citeturn2view1turn2view2turn3view3
 
-```mermaid
-timeline
-    title PATCH 12.08 TIMELINE
-    2026-04-27 : Riot publishes "Introducing Skirmish: Ascension"
-    2026-04-28 : Patch Notes 12.08 published
-               : Ascent IN / Bind OUT
-               : Premier Stage V26A3 announced
-    2026-04-29 : Skirmish: Ascension goes live
-    2026-05-09 : Premier weekly Saturday matches begin
-    2026-06-13 : Premier regular season ends
-    2026-06-20 : Premier playoffs round 1
-    2026-06-21 : Premier playoffs continue
-    2026-06-22 : Skirmish: Ascension challenge ends
-```
+# Valorant Patch 12.08 Timeline Knowledge Base
+
+## Event: Skirmish Announcement
+Date: 2026-04-27
+Details:
+- Riot เปิดตัว "Skirmish: Ascension"
+Impact:
+- ผู้เล่นเริ่มเตรียมตัวสำหรับโหมดใหม่
+Tags: announcement, skirmish
+
+---
+
+## Event: Patch Notes Release
+Date: 2026-04-28
+Details:
+- Patch Notes 12.08 ถูกเผยแพร่
+- Ascent เข้า (IN)
+- Bind ออก (OUT)
+- Premier Stage V26A3 ถูกประกาศ
+Impact:
+- meta shift ไปที่ Ascent
+- ทีมต้องปรับ map pool
+Tags: patch_notes, map_rotation, premier
+
+---
+
+## Event: Skirmish Live
+Date: 2026-04-29
+Details:
+- โหมด Skirmish: Ascension เปิดให้เล่น
+Impact:
+- ใช้ฝึก aim / clutch / timing
+Tags: skirmish, live, practice
+
+---
+
+## Event: Premier Weekly Matches Start
+Date: 2026-05-09
+Details:
+- เริ่มแข่ง Premier รายสัปดาห์ (วันเสาร์)
+Impact:
+- ทีมต้องเริ่มแข่งขันจริง
+Tags: premier, weekly_match
+
+---
+
+## Event: Premier Regular Season End
+Date: 2026-06-13
+Details:
+- จบฤดูกาลปกติ
+Impact:
+- เตรียมเข้าสู่รอบ playoff
+Tags: premier, season_end
+
+---
+
+## Event: Premier Playoffs Round 1
+Date: 2026-06-20
+Details:
+- เริ่ม playoff รอบแรก
+Impact:
+- การแข่งขันเข้มข้นขึ้น
+Tags: premier, playoff
+
+---
+
+## Event: Premier Playoffs Continue
+Date: 2026-06-21
+Details:
+- แข่ง playoff ต่อเนื่อง
+Impact:
+- ทีมต้องรักษาฟอร์ม
+Tags: premier, playoff
+
+---
+
+## Event: Skirmish Challenge End
+Date: 2026-06-22
+Details:
+- สิ้นสุดกิจกรรม Skirmish: Ascension
+Impact:
+- โหมดฝึกพิเศษถูกปิด
+Tags: skirmish, event_end
 
 ## รายชื่อ Agent ทั้ง 29 ตัวพร้อมสกิลและวิธีเล่น
 
@@ -58,58 +189,543 @@ pie showData
 
 **Duelists**
 
-| Agent | Role | Abilities | Use-case timing | Playstyle |
-|---|---|---|---|---|
-| Jett | Duelist | **Q Updraft** — ขึ้นมุมสูง<br>**E Tailwind** — dash รีโพสิชัน<br>**C Cloudburst** — smoke สั้นโค้งได้<br>**X Blade Storm** — มีดแม่นสูง | ใช้ Q/E ตอนเปิดมุมแรกหรือหนี trade; C ตอนครอส/แก้ควัน; X ตอน eco หรือรอบที่ต้องเก็บเครดิต | entry/Op carry, เล่น pick แล้วถอย |
-| Waylay | Duelist | **Q Lightspeed** — dash สองจังหวะ<br>**E Refract** — วาง beacon แล้วย้อนกลับ<br>**C Saturate** — Hinder ชะลอหนัก<br>**X Convergent Paths** — beam ใหญ่+speed | วาง E ก่อน peek เสี่ยง; ใช้ C ก่อนเข้าหรือกัน retake; Q ใช้กินพื้นที่หลัง util ทีม; X ใช้เปิดไซต์ | entry ที่ต้องวางแผนทางหนี |
-| Iso | Duelist | **Q Undercut** — ยิงทะลุให้ Vulnerable+Suppress<br>**E Double Tap** — โล่กัน 1 hit + flow<br>**C Contingency** — กำแพงกันกระสุน<br>**X Kill Contract** — ดึง 1v1 | E ก่อน duel แรก; Q/C ก่อน swing มุมยาก; X ดึงตัว carry/anchor ออกจาก round | เล่น isolate duel และบังคับ 1v1 |
-| Neon | Duelist | **Q Relay Bolt** — concuss เด้งพื้น<br>**E High Gear** — วิ่งเร็ว+slide<br>**C Fast Lane** — กำแพงวิชั่นคู่<br>**X Overdrive** — ลำแสงยิงแม่นระหว่างวิ่ง | Q ก่อนเข้ามุม; C ใช้ครอสหรือแยกไซต์; E ใช้เปิดพื้นที่เร็ว/retake; X ดีมากใน eco และ fast hit | hyper-entry, เร่ง tempo ให้ทีม |
-| Phoenix | Duelist | **Q Curveball** — flash โค้ง<br>**E Hot Hands** — fire zone + heal ตัวเอง<br>**C Blaze** — กำแพงไฟบังวิชั่น<br>**X Run It Back** — ได้ “ชีวิตฟรี” ชั่วคราว | Q ตอนออกมุม; E เคลียร์ close corner/deny plant; C แบ่งไซต์; X ใช้ entry, retake หรือเช็กข้อมูล | self-sufficient duelist, เล่นนำทีมได้ด้วยตัวเอง |
-| Raze | Duelist | **Q Blast Pack** — satchel ดันตัว/ดันศัตรู<br>**E Paint Shells** — grenade แตกย่อย<br>**C Boom Bot** — bot เช็กมุม<br>**X Showstopper** — rocket พื้นที่ใหญ่ | ใช้ C/E ล้างมุมก่อนเข้า; Q ใช้ mobility หรือหยุด defuse; X ใช้ปิดไซต์/ปิดรอบ | explosive entry, เก่งในพื้นที่แคบ |
-| Reyna | Duelist | **Q Devour** — heal จาก Soul Orb<br>**E Dismiss** — intangible/invis ตอน Empress<br>**C Leer** — nearsight eye<br>**X Empress** — combat stim + soul loop | C ก่อน duel line-of-sight; Q/E หลังกด kill ทันที; X ใช้ตอนมั่นใจว่าสามารถ chain kills ได้ | snowball fragger, เก่งเมื่อชนะ duel แรก |
-| Yoru | Duelist | **Q Blindside** — bounce flash<br>**E Gatecrash** — TP / fake TP<br>**C Fakeout** — clone หลอกศัตรู<br>**X Dimensional Drift** — invis scout/ตั้ง flank | ใช้ C/E ก่อน fake หรือ lurk; Q คอมโบจาก TP; X ใช้เก็บข้อมูล วางจังหวะ flank หรือดึง utility | trickster/lurker, เล่น mindgame สูง |
+# Valorant Duelist Agent Knowledge Base
+
+## Agent: Jett
+Role: Duelist
+Abilities:
+- Q (Updraft): ขึ้นมุมสูง / reposition แนวตั้ง
+- E (Tailwind): dash หนีหรือเปิดมุมเร็ว
+- C (Cloudburst): smoke สั้น ควบคุมทิศทางได้
+- X (Blade Storm): มีดแม่นสูง ใช้แทนปืนได้
+Use_Case_Timing:
+- Q/E ใช้ตอนเปิดมุมแรก หรือหนี trade
+- C ใช้ครอสหรือแก้ smoke
+- X ใช้ตอน eco หรือรอบต้องประหยัด
+Playstyle:
+- entry / Operator carry
+- ยิงแล้วถอย (hit-and-run)
+Tags: duelist, entry, mobility, sniper
+
+---
+
+## Agent: Waylay
+Role: Duelist
+Abilities:
+- Q (Lightspeed): dash สองจังหวะ
+- E (Refract): วาง beacon แล้วย้อนกลับ
+- C (Saturate): Hinder ลดความเร็วศัตรู
+- X (Convergent Paths): beam ใหญ่ + เพิ่ม speed
+Use_Case_Timing:
+- E ก่อน peek เสี่ยง
+- C ก่อนเข้าหรือกัน retake
+- Q ใช้หลัง utility ทีมเปิด
+- X ใช้เปิดไซต์
+Playstyle:
+- entry ที่ต้องวางแผน escape
+Tags: duelist, mobility, tactical_entry
+
+---
+
+## Agent: Iso
+Role: Duelist
+Abilities:
+- Q (Undercut): ยิงทะลุทำให้ศัตรู Vulnerable + Suppress
+- E (Double Tap): ได้โล่กัน 1 hit
+- C (Contingency): กำแพงกันกระสุน
+- X (Kill Contract): ดึงศัตรูไป 1v1
+Use_Case_Timing:
+- E ก่อน duel
+- Q/C ก่อน swing มุมยาก
+- X ใช้ดึง carry หรือ anchor ออก
+Playstyle:
+- เน้น isolate duel
+- บังคับ 1v1
+Tags: duelist, duel, isolate
+
+---
+
+## Agent: Neon
+Role: Duelist
+Abilities:
+- Q (Relay Bolt): concuss กระเด้งพื้น
+- E (High Gear): วิ่งเร็ว + slide
+- C (Fast Lane): กำแพงวิชั่นคู่
+- X (Overdrive): ยิงแม่นขณะวิ่ง
+Use_Case_Timing:
+- Q ก่อนเข้ามุม
+- C ใช้ครอสไซต์
+- E ใช้เปิดพื้นที่เร็ว
+- X ใช้ตอน rush หรือ eco
+Playstyle:
+- hyper-entry
+- เร่ง tempo ทีม
+Tags: duelist, speed, rush
+
+---
+
+## Agent: Phoenix
+Role: Duelist
+Abilities:
+- Q (Curveball): flash โค้ง
+- E (Hot Hands): fire zone + heal
+- C (Blaze): กำแพงไฟ
+- X (Run It Back): ได้ชีวิตฟรี
+Use_Case_Timing:
+- Q ตอนออกมุม
+- E เคลียร์มุมใกล้
+- C แบ่งไซต์
+- X ใช้ entry / retake
+Playstyle:
+- self-sufficient
+- เล่นคนเดียวได้
+Tags: duelist, self_heal, entry
+
+---
+
+## Agent: Raze
+Role: Duelist
+Abilities:
+- Q (Blast Pack): satchel mobility
+- E (Paint Shells): grenade แตกย่อย
+- C (Boom Bot): bot เช็คมุม
+- X (Showstopper): rocket AoE
+Use_Case_Timing:
+- C/E เคลียร์มุมก่อนเข้า
+- Q ใช้ mobility หรือหยุด defuse
+- X ใช้ปิดไซต์
+Playstyle:
+- explosive entry
+Tags: duelist, explosive, entry
+
+---
+
+## Agent: Reyna
+Role: Duelist
+Abilities:
+- Q (Devour): heal หลัง kill
+- E (Dismiss): หลบหนี / invis
+- C (Leer): nearsight
+- X (Empress): combat boost
+Use_Case_Timing:
+- C ก่อน duel
+- Q/E หลัง kill ทันที
+- X ใช้ตอนมั่นใจ chain kills
+Playstyle:
+- snowball fragger
+Tags: duelist, snowball, carry
+
+---
+
+## Agent: Yoru
+Role: Duelist
+Abilities:
+- Q (Blindside): flash กระเด้ง
+- E (Gatecrash): teleport
+- C (Fakeout): clone หลอก
+- X (Dimensional Drift): invis scout
+Use_Case_Timing:
+- C/E ใช้ fake หรือ lurk
+- Q คอมโบกับ TP
+- X ใช้ scout หรือ flank
+Playstyle:
+- trickster / mindgame
+Tags: duelist, deception, lurk
 
 ที่มาเรื่องชื่อ Agent, บทบาท, และคีย์สกิลของ Duelist table มาจาก Riot roster/current pages และฐานข้อมูลปัจจุบันของ Jett, Waylay, Iso, Neon, Phoenix, Raze, Reyna, Yoru โดยเฉพาะ Phoenix/Yoru ใช้ Riot current page และ current secondary references เสริมเพราะ web preview บางหน้าไม่แสดง ability blocks ครบทุกบรรทัด citeturn14view0turn19view1turn19view0turn28view2turn31view0turn40view0turn32view1turn34view2turn42search14turn42search18turn43search1turn43search2
 
 **Initiators**
 
-| Agent | Role | Abilities | Use-case timing | Playstyle |
-|---|---|---|---|---|
-| Breach | Initiator | **Q Flashpoint** — flash ทะลุกำแพง<br>**E Fault Line** — concuss เป็นเส้น<br>**C Aftershock** — burst damage หลังผนัง<br>**X Rolling Thunder** — quake ใหญ่ | Q/E ก่อนให้ duelists swing; C ไล่คนในซอกหรือหยุด defuse; X ใช้เปิดไซต์หรือ retake | support-entry initiator, เน้นคอมโบกับทีม |
-| Fade | Initiator | **Q Seize** — จับคา + Deafened/Decayed<br>**E Haunt** — reveal + trail<br>**C Prowler** — ตาม trail และ nearsight<br>**X Nightfall** — คลื่น Mark/Deafen/Decay | E เปิดข้อมูลก่อน hit; C ไล่ตาม trail; Q ล็อกเป้าให้เพื่อนตามยิง; X ใช้เปิดไซต์หรือ retake | info + hunt initiator, เก่งกับคอมโบสังหาร |
-| Gekko | Initiator | **Q Wingman** — concuss/plant/defuse<br>**E Dizzy** — flash ยิงพลาสมา<br>**C Mosh Pit** — zone damage แล้วระเบิด<br>**X Thrash** — ควบคุม detain | E/Q ก่อนเข้าไซต์; C กดพื้นที่ plant/defuse; X ใช้เปิด/retake และปิดพื้นที่แคบ | initiator ที่ยืดหยุ่นและเด่นเรื่อง objective control |
-| KAY/O | Initiator | **Q FLASH/drive** — flash ขว้างเร็ว/ช้า<br>**E ZERO/point** — suppression knife<br>**C FRAG/ment** — molly หลายระลอก<br>**X NULL/cmd** — pulse suppress + revive state | E เปิดไซต์ก่อน trade; Q ใช้ self-pop หรือ support; C ไล่มุม/หยุด defuse; X ใช้ก่อน hard exec | anti-ability initiator, ชอบเล่นกับ tempo เร็ว |
-| Skye | Initiator | **Q Trailblazer** — tiger concuss<br>**E Guiding Light** — hawk flash บังคับทิศได้<br>**C Regrowth** — heal allies<br>**X Seekers** — seekers หา 3 เป้า | E/Q ใช้หาข้อมูลก่อน swing; C หลังไฟต์หรือก่อน retake; X ใช้ล็อกตำแหน่งก่อนบุก | all-round initiator, utility ครบและอ่านเกมง่าย |
-| Sova | Initiator | **Q Shock Bolt** — damage bolt เด้งได้<br>**E Recon Bolt** — reveal bolt<br>**C Owl Drone** — drone + mark dart<br>**X Hunter’s Fury** — wall-piercing blast | E/C ก่อนเข้าหรือ retake; Q ใช้เคลียร์ trap/มุม; X ปิดคน plant/defuse หรือยิงตามข้อมูล | info initiator ระยะไกล, เล่นตำแหน่งที่สองเด่น |
-| Tejo | Initiator | **Q Special Delivery** — sticky concuss nade<br>**E Guided Salvo** — เลือก 2 จุดยิงมิสไซล์<br>**C Stealth Drone** — drone suppress+reveal<br>**X Armageddon** — strike line ระเบิดรุนแรง | C เปิดข้อมูลก่อน hit; E บีบ anchor ออกจากจุด; Q ปิดมุม; X ใช้ล้างเส้นทาง plant/retake | artillery initiator, เน้นบังคับพื้นที่จากระยะปลอดภัย |
+# Valorant Initiator Agent Knowledge Base
+
+## Agent: Breach
+Role: Initiator
+Abilities:
+- Q (Flashpoint): flash ทะลุกำแพง
+- E (Fault Line): concuss เป็นเส้นยาว
+- C (Aftershock): burst damage หลังผนัง
+- X (Rolling Thunder): quake ขนาดใหญ่
+Use_Case_Timing:
+- Q/E ก่อนให้ duelists swing
+- C ไล่คนในซอกหรือหยุด defuse
+- X ใช้เปิดไซต์หรือ retake
+Playstyle:
+- support-entry initiator
+- เน้นคอมโบกับทีม
+Tags: initiator, cc, stun, teamplay
+
+---
+
+## Agent: Fade
+Role: Initiator
+Abilities:
+- Q (Seize): จับศัตรู + debuff (Deafened / Decayed)
+- E (Haunt): reveal + trail
+- C (Prowler): ไล่ตาม trail + nearsight
+- X (Nightfall): wave ทำ mark + debuff
+Use_Case_Timing:
+- E เปิดข้อมูลก่อนเข้า
+- C ไล่ตาม trail
+- Q ล็อกเป้าให้ทีมยิง
+- X ใช้เปิดไซต์หรือ retake
+Playstyle:
+- info + hunt initiator
+Tags: initiator, reveal, debuff, tracking
+
+---
+
+## Agent: Gekko
+Role: Initiator
+Abilities:
+- Q (Wingman): concuss + plant/defuse
+- E (Dizzy): ยิง flash พลาสมา
+- C (Mosh Pit): zone damage
+- X (Thrash): detain ศัตรู
+Use_Case_Timing:
+- E/Q ก่อนเข้าไซต์
+- C กดพื้นที่ plant/defuse
+- X ใช้เปิดหรือ retake
+Playstyle:
+- flexible initiator
+- เด่นเรื่อง objective control
+Tags: initiator, utility, objective
+
+---
+
+## Agent: KAY/O
+Role: Initiator
+Abilities:
+- Q (FLASH/drive): flash แบบขว้างเร็ว/ช้า
+- E (ZERO/point): suppression knife
+- C (FRAG/ment): molly damage หลายรอบ
+- X (NULL/cmd): suppress pulse + revive state
+Use_Case_Timing:
+- E เปิดไซต์ก่อน trade
+- Q ใช้ self-pop หรือ support
+- C ไล่มุม / หยุด defuse
+- X ใช้ก่อน hard execute
+Playstyle:
+- anti-ability initiator
+- tempo เร็ว
+Tags: initiator, suppress, anti_utility
+
+---
+
+## Agent: Skye
+Role: Initiator
+Abilities:
+- Q (Trailblazer): tiger concuss
+- E (Guiding Light): hawk flash ควบคุมได้
+- C (Regrowth): heal teammates
+- X (Seekers): หา 3 เป้าหมาย
+Use_Case_Timing:
+- E/Q ใช้เปิดข้อมูลก่อน swing
+- C ใช้หลังไฟต์หรือก่อน retake
+- X ใช้ล็อกตำแหน่งก่อนเข้า
+Playstyle:
+- all-round initiator
+Tags: initiator, flash, heal, support
+
+---
+
+## Agent: Sova
+Role: Initiator
+Abilities:
+- Q (Shock Bolt): ยิง damage เด้งผนัง
+- E (Recon Bolt): reveal bolt
+- C (Owl Drone): drone + mark
+- X (Hunter’s Fury): ยิงทะลุกำแพง
+Use_Case_Timing:
+- E/C ก่อนเข้าไซต์หรือ retake
+- Q เคลียร์ trap / มุม
+- X ยิงตามข้อมูล (plant/defuse)
+Playstyle:
+- long-range info initiator
+Tags: initiator, recon, lineup, long_range
+
+---
+
+## Agent: Tejo
+Role: Initiator
+Abilities:
+- Q (Special Delivery): sticky concuss grenade
+- E (Guided Salvo): ยิงมิสไซล์ 2 จุด
+- C (Stealth Drone): drone suppress + reveal
+- X (Armageddon): strike line damage สูง
+Use_Case_Timing:
+- C เปิดข้อมูลก่อน hit
+- E บีบ anchor ออกจากตำแหน่ง
+- Q ปิดมุม
+- X ใช้เปิดทางหรือ retake
+Playstyle:
+- artillery initiator
+- บังคับพื้นที่จากระยะไกล
+Tags: initiator, artillery, zoning, control
 
 ที่มาเรื่องชื่อ Agent, บทบาท, และคีย์สกิลของ Initiator table มาจาก Riot roster/current pages และฐานข้อมูลปัจจุบันของ Breach, Fade, Gekko, KAY/O, Skye, Sova และ Tejo citeturn14view0turn25view0turn27view1turn28view0turn31view2turn34view1turn35view0turn35view1
 
 **Controllers**
 
-| Agent | Role | Abilities | Use-case timing | Playstyle |
-|---|---|---|---|---|
-| Astra | Controller | **Q Nova Pulse** — concuss จากดาว<br>**E Nebula/Dissipate** — smoke/เก็บดาว<br>**C Gravity Well** — pull + Vulnerable<br>**X Astral Form / Cosmic Divide** — วางดาว/กำแพงตัดเสียง | วางดาวก่อน exec; กด Q/C ตอนศัตรูติดมุม; X ใช้แบ่งไซต์, post-plant หรือ retake | macro controller, เล่นระยะสองและคุม tempo |
-| Brimstone | Controller | **Q Incendiary** — molly พื้นที่<br>**E Sky Smoke** — map smokes<br>**C Stim Beacon** — combat stim + speed<br>**X Orbital Strike** — laser DoT | E ก่อนเข้าไซต์; Q หลัง plant หรือ stopping push; C ตอน commit; X ใช้ clear default plant/retake spot | controller ตรงไปตรงมา, exec/post-plant เก่งมาก |
-| Clove | Controller | **Q Meddle** — decay grenade<br>**E Ruse** — smokes ใช้ได้แม้ตาย<br>**C Pick-me-up** — haste + temp HP<br>**X Not Dead Yet** — ชุบตัวเอง | E ใช้คุมเส้นเข้าเสมอ; Q ก่อน swing; C หลังได้ kill; X ใช้เมื่อมีโอกาสเก็บ kill/assist ต่อ | fragging controller, เดินกับทีมแล้ว trade ดี |
-| Harbor | Controller | **Q High Tide** — กำแพงน้ำพับทิศได้<br>**E Cove** — smoke โล่น้ำกันกระสุน<br>**C Storm Surge** — whirlpool slow + nearsight<br>**X Reckoning** — คลื่นน้ำกดพื้นที่ | ใช้ Q/E ตอนข้ามพื้นที่โล่ง; C ปิดมุมหลบหรือหยุด push; X เปิดไซต์/retake | controller สายครอสพื้นที่และตัดมุม OP |
-| Miks | Controller | **Q Harmonize** — stim ให้ตนเอง/เพื่อน<br>**E Waveform** — map smokes<br>**C M-pulse** — โหมด concuss หรือ heal<br>**X Bassquake** — knockback + deafen + slow | E ก่อน exec; Q เมื่อทีมจะ commit; C ใช้ทั้งตั้งรับและ sustain หลังไฟต์; X ใช้เปิดทางเข้าหรือหยุด push | support-controller, ขับ tempo และช่วยทีมรวมเป็นก้อน |
-| Omen | Controller | **Q Paranoia** — nearsight/deafen ทะลุกำแพง<br>**E Dark Cover** — long smoke<br>**C Shrouded Step** — short TP<br>**X From the Shadows** — global TP | E ใช้ default/exec; Q คอมโบก่อนเพื่อน swing; C ใช้หลบมุมหรือ off-angle; X ใช้ lurk flip/เก็บข้อมูล | flexible controller, เล่น fake/lurk ได้ดี |
-| Viper | Controller | **Q Poison Cloud** — orb smoke decay<br>**E Toxic Screen** — กำแพงพิษยาว<br>**C Snake Bite** — molly + Vulnerable<br>**X Viper’s Pit** — ult คุมพื้นที่ใหญ่ | Q/E ใช้ default ยืดรอบ; C หลัง plant หรือหยุด rush; X ใช้ยึดไซต์/ปิด retake | controller สาย attrition และ post-plant |
+# Valorant Controller Agent Knowledge Base
+
+## Agent: Astra
+Role: Controller
+Abilities:
+- Q (Nova Pulse): concuss จากดาว
+- E (Nebula / Dissipate): smoke หรือเก็บดาว
+- C (Gravity Well): ดึงศัตรู + Vulnerable
+- X (Astral Form / Cosmic Divide): วางดาว / กำแพงตัดเสียง
+Use_Case_Timing:
+- วางดาวก่อน execute
+- ใช้ Q/C ตอนศัตรูติดมุม
+- X ใช้แบ่งไซต์ / post-plant / retake
+Playstyle:
+- macro controller
+- คุม tempo จากระยะไกล
+Tags: controller, global_control, macro, utility
+
+---
+
+## Agent: Brimstone
+Role: Controller
+Abilities:
+- Q (Incendiary): molly กดพื้นที่
+- E (Sky Smoke): smoke จากแผนที่
+- C (Stim Beacon): เพิ่ม fire rate + speed
+- X (Orbital Strike): laser damage สูง
+Use_Case_Timing:
+- E ก่อนเข้าไซต์
+- Q หลัง plant หรือหยุด push
+- C ตอน commit
+- X ใช้ clear จุดสำคัญ
+Playstyle:
+- controller ตรงไปตรงมา
+- เด่น exec และ post-plant
+Tags: controller, execute, postplant, simple
+
+---
+
+## Agent: Clove
+Role: Controller
+Abilities:
+- Q (Meddle): grenade ทำ decay
+- E (Ruse): smoke ใช้ได้แม้ตาย
+- C (Pick-me-up): haste + HP ชั่วคราว
+- X (Not Dead Yet): revive ตัวเอง
+Use_Case_Timing:
+- E คุมเส้นเข้าเสมอ
+- Q ก่อน swing
+- C หลังได้ kill
+- X ใช้เมื่อมีโอกาส chain kill
+Playstyle:
+- fragging controller
+- เล่นกับทีมและ trade ดี
+Tags: controller, aggressive, trade, sustain
+
+---
+
+## Agent: Harbor
+Role: Controller
+Abilities:
+- Q (High Tide): กำแพงน้ำปรับทิศ
+- E (Cove): smoke + shield กันกระสุน
+- C (Storm Surge): slow + nearsight
+- X (Reckoning): คลื่นน้ำกดพื้นที่
+Use_Case_Timing:
+- Q/E ใช้ตอนข้ามพื้นที่โล่ง
+- C ปิดมุมหรือหยุด push
+- X เปิดไซต์หรือ retake
+Playstyle:
+- controller สาย cross map
+- ตัดมุม Operator
+Tags: controller, wall, execute, anti_op
+
+---
+
+## Agent: Miks
+Role: Controller
+Abilities:
+- Q (Harmonize): stim ทีม
+- E (Waveform): map smokes
+- C (M-pulse): concuss หรือ heal
+- X (Bassquake): knockback + deafen + slow
+Use_Case_Timing:
+- E ก่อน execute
+- Q ตอน commit
+- C ใช้ sustain หรือ defense
+- X เปิดทางหรือหยุด push
+Playstyle:
+- support-controller
+- ขับ tempo ทีม
+Tags: controller, support, tempo, teamplay
+
+---
+
+## Agent: Omen
+Role: Controller
+Abilities:
+- Q (Paranoia): nearsight + deafen
+- E (Dark Cover): long smoke
+- C (Shrouded Step): teleport สั้น
+- X (From the Shadows): teleport ทั่วแผนที่
+Use_Case_Timing:
+- E ใช้ default หรือ execute
+- Q ก่อน swing
+- C ใช้ reposition หรือเล่นมุม
+- X ใช้ lurk / fake / scout
+Playstyle:
+- flexible controller
+- เล่น fake และ lurk ได้ดี
+Tags: controller, flexible, teleport, mindgame
+
+---
+
+## Agent: Viper
+Role: Controller
+Abilities:
+- Q (Poison Cloud): orb smoke ทำ decay
+- E (Toxic Screen): กำแพงพิษ
+- C (Snake Bite): molly + Vulnerable
+- X (Viper’s Pit): คุมพื้นที่ขนาดใหญ่
+Use_Case_Timing:
+- Q/E ใช้ default ยืดเวลา
+- C หลัง plant หรือหยุด rush
+- X ใช้ยึดไซต์หรือกัน retake
+Playstyle:
+- controller สาย attrition
+- เด่น post-plant
+Tags: controller, zone_control, postplant, defense
 
 ที่มาเรื่องชื่อ Agent, บทบาท, และคีย์สกิลของ Controller table มาจาก Riot roster/current pages และฐานข้อมูลปัจจุบันของ Astra, Brimstone, Clove, Harbor, Miks, Omen และ Viper citeturn14view0turn24view0turn25view1turn26view1turn28view1turn29view2turn31view1turn37search1
 
 **Sentinels**
 
-| Agent | Role | Abilities | Use-case timing | Playstyle |
-|---|---|---|---|---|
-| Chamber | Sentinel | **Q Headhunter** — heavy pistol<br>**E Rendezvous** — TP anchor<br>**C Trademark** — slow trap<br>**X Tour De Force** — custom sniper | วาง E ก่อน wide peek; ใช้ C กัน flank/main; Q/X ใช้คุมเครดิตหรือถือ long angle | sentinel ที่เอียงไปทาง pick/Operator |
-| Cypher | Sentinel | **Q Cyber Cage** — ควันบังวิชั่น + audio cue<br>**E Spycam** — camera reveal dart<br>**C Trapwire** — trip slow/reveal<br>**X Neural Theft** — reveal ทั้งทีมศัตรู | C/E ตั้งก่อน round; Q เปิดตอนศัตรูเข้าหรือ retake; X ใช้หลังได้ body ทันที | info sentinel, เด่นมากใน anchor และ flank watch |
-| Deadlock | Sentinel | **Q Sonic Sensor** — ตรวจเสียงแล้ว concuss<br>**E GravNet** — บังคับ crouch/slow<br>**C Barrier Mesh** — wall บล็อกทางเดิน<br>**X Annihilation** — cocoon kill | ตั้ง Q/C กัน rush; E ใช้หยุด entry; X ใช้จับคนเปิดหรือคนคุม post-plant | anti-rush sentinel, เก่งใน choke ชัด ๆ |
-| Killjoy | Sentinel | **Q ALARMBOT** — hunt แล้วให้ Vulnerable<br>**E TURRET** — ป้อมคุมมุม<br>**C Nanoswarm** — molly ซ่อน<br>**X Lockdown** — detain พื้นที่ใหญ่ | วาง E/Q ก่อน round; C ใช้ deny plant/defuse; X ตอนจะยึดไซต์หรือบังคับ retake | anchor sentinel มาตรฐาน, เก่ง setup และ post-plant |
-| Sage | Sentinel | **Q Slow Orb** — slow field<br>**E Healing Orb** — heal<br>**C Barrier Orb** — กำแพง<br>**X Resurrection** — ชุบเพื่อน | C ใช้ตัดทางหรือชะลอ hit; E หลังไฟต์; Q เวลา rush มา; X เมื่อชุบแล้วทีมตั้งรูปได้จริง | support sentinel, ช่วยยืดเวลาและประคอง round |
-| Veto | Sentinel | **Q Chokehold** — trap ล็อกเป้า + Deafened/Decayed<br>**E Interceptor** — anti-utility device<br>**C Crosscut** — vortex TP<br>**X Evolution** — regen + stim + immune debuffs | E ตั้งรับเส้นเข้า utility หนัก; Q ดัก choke; C ใช้ hold off-angle/กลับจุด; X ใช้ถือไซต์หรือ retake ไฟต์ยาว | anti-utility sentinel เชิงรุก |
-| Vyse | Sentinel | **Q Shear** — hidden wall trap<br>**E Arc Rose** — trap flash<br>**C Razorvine** — slow + damage ตอนขยับ<br>**X Steel Garden** — jam อาวุธหลักศัตรู | E/Q วางก่อน round; C ใช้หยุด push หรือ retake path; X ใช้ก่อน exec/retake ให้ยิงคืนยาก | funnel sentinel, ชอบบังคับศัตรูเข้าช่องแคบ |
+# Valorant Sentinel Agent Knowledge Base
+
+## Agent: Chamber
+Role: Sentinel
+Abilities:
+- Q (Headhunter): ปืนพกแรงสูง
+- E (Rendezvous): วางจุด TP หนี
+- C (Trademark): trap slow กัน flank
+- X (Tour De Force): sniper พิเศษ
+Use_Case_Timing:
+- E วางก่อน peek เสี่ยง
+- C ใช้กัน flank หรือ main
+- Q/X ใช้ตอน eco หรือถือมุมยาว
+Playstyle:
+- sentinel สาย aim / pick
+- คล้าย Operator player
+Tags: sentinel, sniper, pick, mobility
+
+---
+
+## Agent: Cypher
+Role: Sentinel
+Abilities:
+- Q (Cyber Cage): ควัน + audio cue
+- E (Spycam): กล้อง reveal
+- C (Trapwire): tripwire slow + reveal
+- X (Neural Theft): reveal ทั้งทีม
+Use_Case_Timing:
+- C/E วางก่อนเริ่มรอบ
+- Q เปิดตอนศัตรูเข้า
+- X ใช้ทันทีหลังได้ kill
+Playstyle:
+- info sentinel
+- เด่น anchor และ flank control
+Tags: sentinel, info, trap, defense
+
+---
+
+## Agent: Deadlock
+Role: Sentinel
+Abilities:
+- Q (Sonic Sensor): ตรวจเสียง + concuss
+- E (GravNet): บังคับ crouch + slow
+- C (Barrier Mesh): wall บล็อกทาง
+- X (Annihilation): cocoon kill
+Use_Case_Timing:
+- Q/C ตั้งกัน rush
+- E ใช้หยุด entry
+- X ใช้จับตัวเปิดหรือ post-plant
+Playstyle:
+- anti-rush sentinel
+- เก่งใน choke
+Tags: sentinel, anti_rush, control, choke
+
+---
+
+## Agent: Killjoy
+Role: Sentinel
+Abilities:
+- Q (ALARMBOT): detect + Vulnerable
+- E (TURRET): ป้อมยิงอัตโนมัติ
+- C (Nanoswarm): molly ซ่อน
+- X (Lockdown): detain พื้นที่ใหญ่
+Use_Case_Timing:
+- E/Q วางก่อน round
+- C ใช้ deny plant / defuse
+- X ใช้ยึดไซต์หรือ retake
+Playstyle:
+- anchor sentinel มาตรฐาน
+- เด่น setup และ post-plant
+Tags: sentinel, anchor, setup, postplant
+
+---
+
+## Agent: Sage
+Role: Sentinel
+Abilities:
+- Q (Slow Orb): slow field
+- E (Healing Orb): heal
+- C (Barrier Orb): wall
+- X (Resurrection): revive teammate
+Use_Case_Timing:
+- C ใช้ตัดทาง / delay hit
+- E หลังไฟต์
+- Q ตอนโดน rush
+- X ใช้เมื่อ revive แล้วทีมตั้งรูปได้
+Playstyle:
+- support sentinel
+- ยืดเวลา / stabilize round
+Tags: sentinel, support, heal, stall
+
+---
+
+## Agent: Veto
+Role: Sentinel
+Abilities:
+- Q (Chokehold): trap + debuff
+- E (Interceptor): anti-utility device
+- C (Crosscut): vortex teleport
+- X (Evolution): regen + stim + immune debuff
+Use_Case_Timing:
+- E ตั้งรับ utility หนัก
+- Q ดัก choke
+- C ใช้ reposition
+- X ใช้ถือไซต์หรือ retake
+Playstyle:
+- anti-utility sentinel เชิงรุก
+Tags: sentinel, anti_utility, aggressive
+
+---
+
+## Agent: Vyse
+Role: Sentinel
+Abilities:
+- Q (Shear): hidden wall trap
+- E (Arc Rose): trap flash
+- C (Razorvine): slow + damage
+- X (Steel Garden): jam อาวุธหลักศัตรู
+Use_Case_Timing:
+- E/Q วางก่อน round
+- C ใช้หยุด push หรือ retake
+- X ใช้ก่อน exec/retake
+Playstyle:
+- funnel sentinel
+- บังคับศัตรูเข้าช่องแคบ
+Tags: sentinel, trap, funnel, control
 
 ที่มาเรื่องชื่อ Agent, บทบาท, และคีย์สกิลของ Sentinel table มาจาก Riot roster/current pages และฐานข้อมูลปัจจุบันของ Chamber, Cypher, Deadlock, Killjoy, Sage, Veto และ Vyse citeturn14view0turn26view0turn26view2turn27view0turn29view1turn34view0turn37search2turn36view2
 
@@ -117,20 +733,208 @@ pie showData
 
 คำแนะนำด้านล่างเป็น **analytical synthesis** จากเลย์เอาต์และคำอธิบายแผนที่ทางการของ Riot รวมถึงบริบท callouts/guide ปัจจุบันของแผนที่ใหม่อย่าง Corrode เพื่อให้ใช้งานได้จริงใน ranked มากกว่าจะเป็นคำอธิบาย lore ของแผนที่ citeturn23view0turn22view0turn44search0turn44search1
 
-| Map | จุดเด่นโครงสร้าง | ฝั่งโจมตีควรเล่นอย่างไร | ฝั่งป้องกันควรเล่นอย่างไร | choke / smoke / utility ที่พบบ่อย |
-|---|---|---|---|---|
-| Corrode | 3-lane, layered defense | สู้ mid เร็วแล้ว split ไซต์; ใช้ flash/molly เคลียร์แนวซ้อน | เก็บข้อมูล mid แล้วถอยไปเล่น crossfire ชั้นใน | A Main, Mid/Elbow, B Main; smoke Mid-Connector, A Heaven, B Backsite |
-| Abyss | 2 ไซต์ + death drops | เล่นช้าเพื่อบังคับคนจากขอบตกเหว; mid split สำคัญ | ลงโทษคน overpeek ใกล้ขอบ; retake เป็นหน่วย | A Main, Mid, B Main; smoke A Bridge/Heaven, B Pillar/Backsite |
-| Sunset | 3-lane คลาสสิก เน้น mid | mid control สำคัญมาก โดยเฉพาะ split B ผ่าน Market/Boba | ถ้าปล่อย mid ฟรีจะเสียทั้ง A และ B link | Top Mid, Market, Boba, A Elbow, B CT |
-| Lotus | 3 sites + rotating doors | ใช้เสียงประตูและ fast pivot หลอกไซต์; default กว้างได้ผล | เก็บ A Main/C Main info และใช้ประตูช่วย rotate | A Main/Tree, B Main, C Main/Mound; smoke Tree, B Site, C Waterfall/CT |
-| Pearl | no mechanics, mid แน่น, long wings | ชนะ mid ก่อนจึง split B ง่าย; ถ้าไม่ชนะ mid ให้ดัน long ทีละด้าน | ห้ามปล่อย Art/Mid ฟรี; long lanes เหมาะกับ rifle/Op | Mid Connector/Art, A Dugout, B Link/Heaven |
-| Fracture | attackers เข้าจากสองฝั่ง | pinch พร้อมกันจากสองทาง, utility ต้องลงพร้อม | ฝั่งรับควร push info บางจังหวะ ไม่งั้นโดนบีบสองด้าน | A Main/A Drop, B Main/Arcade; smoke A Heaven, B Canteen/Tower |
-| Breeze | open map, long sightlines | ใช้ wall/smoke หนา ๆ ครอสพื้นที่ยาว, lurk doors/halls | เล่น Operator และอย่า trade angle ยาวแบบไม่มี util | A Nest/Pyramids, Mid Top/Doors, B CT/Backsite |
-| Icebox | verticality สูง, zipline | ใช้ smoke/wall คลุมจุด plant; เคลียร์มุมสูงก่อนลง spike | ตั้ง utility แคบ ๆ ที่ choke และ retake จาก rafters/backsite | A Screens/410/Nest, B Yellow/Orange/CT |
-| Ascent | mid-centric, เปิด/ปิดประตูไซต์ได้ | default ช้า เก็บ mid แล้วเลือก split A หรือ B; อย่ารีบ 5 คนวิ่ง main เดียว | contest mid ด้วย info/one-way; sentinel anchor แข็งมาก | Top Mid, Market, Cat, A Tree/Heaven, B Market/CT |
-| Split | vertical mid + ropes | ถ้าไม่คุม Mid Mail/Vents จะเข้ายากมาก; เล่น split เป็นหลัก | เล่น heaven crossfire และใช้ stall utility ที่ funnel | Mid Vent/Mail, A Heaven/Screens, B Heaven/Garage |
-| Haven | 3 sites | default กระจาย เก็บ info ก่อน commit; punishes rotation ได้ดี | เร่ง info ที่ A Long, Garage, C Long แล้ว rotate ไว | A Heaven/CT, B Window/CT, C Platform/CT/Garage |
-| Bind | 2 sites, no mid, teleports | control Hookah/Showers แล้วใช้ TP fake; exec ตรง ๆ ทำได้แรง | anchor extremities ให้แน่นและใช้ TP rotate อย่างมีข้อมูล | A Heaven/Truck, B CT/Elbow/Hookah, TP exits |
+# Valorant Map Strategy Knowledge Base
+
+## Map: Corrode
+Structure:
+- 3-lane
+- layered defense
+Attack_Strategy:
+- เร็ว mid แล้ว split เข้าไซต์
+- ใช้ flash / molly เคลียร์มุมซ้อน
+Defense_Strategy:
+- เก็บ info mid
+- ถอยเล่น crossfire ชั้นใน
+Key_Chokepoints:
+- A Main, Mid/Elbow, B Main
+Common_Utility:
+- Smoke: Mid Connector, A Heaven, B Backsite
+Tags: map, split, mid_control, default
+
+---
+
+## Map: Abyss
+Structure:
+- 2 sites
+- มี death drops
+Attack_Strategy:
+- เล่นช้า
+- ใช้ positioning บังคับศัตรูตกขอบ
+- mid split สำคัญ
+Defense_Strategy:
+- ลงโทษคน overpeek
+- retake เป็นทีม
+Key_Chokepoints:
+- A Main, Mid, B Main
+Common_Utility:
+- Smoke: A Bridge/Heaven, B Pillar/Backsite
+Tags: map, positioning, punish, slow_play
+
+---
+
+## Map: Sunset
+Structure:
+- 3-lane
+- mid-focused
+Attack_Strategy:
+- คุม mid ก่อน
+- split B ผ่าน Market/Boba
+Defense_Strategy:
+- ห้ามเสีย mid ฟรี
+Key_Chokepoints:
+- Top Mid, Market, Boba, A Elbow, B CT
+Tags: map, mid_control, split
+
+---
+
+## Map: Lotus
+Structure:
+- 3 sites
+- rotating doors
+Attack_Strategy:
+- ใช้เสียงประตู fake
+- default กว้าง
+Defense_Strategy:
+- เก็บ info A/C Main
+- rotate ด้วย door
+Key_Chokepoints:
+- A Main/Tree, B Main, C Main/Mound
+Common_Utility:
+- Smoke: Tree, B Site, C Waterfall/CT
+Tags: map, fake, rotation, info
+
+---
+
+## Map: Pearl
+Structure:
+- no special mechanics
+- long lanes
+Attack_Strategy:
+- ชนะ mid → split B
+- หรือเล่น long ทีละด้าน
+Defense_Strategy:
+- ห้ามเสีย Art/Mid
+Key_Chokepoints:
+- Mid Connector/Art, A Dugout, B Link/Heaven
+Tags: map, mid_control, long_range
+
+---
+
+## Map: Fracture
+Structure:
+- attackers เข้าสองฝั่ง
+Attack_Strategy:
+- pinch พร้อมกัน
+- utility ต้อง sync
+Defense_Strategy:
+- push info บางจังหวะ
+- ไม่งั้นโดนบีบสองด้าน
+Key_Chokepoints:
+- A Main/A Drop, B Main/Arcade
+Common_Utility:
+- Smoke: A Heaven, B Canteen/Tower
+Tags: map, pinch, coordination
+
+---
+
+## Map: Breeze
+Structure:
+- open map
+- long sightlines
+Attack_Strategy:
+- ใช้ wall/smoke ครอสพื้นที่
+- lurk doors/halls
+Defense_Strategy:
+- ใช้ Operator
+- หลีกเลี่ยง duel ยาวโดยไม่มี util
+Key_Chokepoints:
+- A Nest/Pyramids, Mid Top/Doors, B CT/Backsite
+Tags: map, long_range, operator
+
+---
+
+## Map: Icebox
+Structure:
+- vertical
+- zipline
+Attack_Strategy:
+- smoke/wall คลุม plant
+- เคลียร์มุมสูงก่อน
+Defense_Strategy:
+- ตั้ง utility ที่ choke
+- retake จาก rafters/backsite
+Key_Chokepoints:
+- A Screens/410/Nest, B Yellow/Orange/CT
+Tags: map, vertical, plant_control
+
+---
+
+## Map: Ascent
+Structure:
+- mid-centric
+- มีประตูเปิด/ปิด
+Attack_Strategy:
+- default ช้า
+- คุม mid แล้ว split
+Defense_Strategy:
+- contest mid
+- ใช้ one-way
+- sentinel anchor สำคัญ
+Key_Chokepoints:
+- Top Mid, Market, Cat, A Tree/Heaven, B Market/CT
+Tags: map, mid_control, default, meta
+
+---
+
+## Map: Split
+Structure:
+- vertical mid
+- ropes
+Attack_Strategy:
+- คุม Mid Mail/Vents
+- split เป็นหลัก
+Defense_Strategy:
+- heaven crossfire
+- stall choke
+Key_Chokepoints:
+- Mid Vent/Mail, A Heaven/Screens, B Heaven/Garage
+Tags: map, vertical, choke
+
+---
+
+## Map: Haven
+Structure:
+- 3 sites
+Attack_Strategy:
+- default กระจาย
+- punish rotation
+Defense_Strategy:
+- เร่ง info
+- rotate เร็ว
+Key_Chokepoints:
+- A Long, Garage, C Long
+Common_Utility:
+- Smoke: A Heaven/CT, B Window, C Platform
+Tags: map, default, rotation
+
+---
+
+## Map: Bind
+Structure:
+- 2 sites
+- ไม่มี mid
+- teleport
+Attack_Strategy:
+- control Hookah/Showers
+- ใช้ TP fake
+Defense_Strategy:
+- anchor extremities
+- rotate จาก info จริง
+Key_Chokepoints:
+- A Short/Showers, B Long/Hookah
+Common_Utility:
+- Smoke: A Heaven/Truck, B CT/Elbow
+Tags: map, teleport, fake, execute
 
 ในมุมเชิงเมตา “เล่นยังไงให้ชนะขึ้น” ถ้าสรุปแบบสั้นจริง ๆ: **Ascent, Split, Sunset, Pearl** ต้องให้ค่ากับ **mid control** สูง; **Lotus, Haven** ต้องคิดเรื่อง **rotation** มากกว่าแค่ site hit; **Bind, Fracture** ต้องซ้อม **timing พร้อมกันหลายทาง**; **Breeze, Icebox, Abyss** ต้องจัด utility เพื่อรับมือ **ระยะยิงยาวและมุมแนวตั้ง** ให้ดีเป็นพิเศษ citeturn23view0turn22view0
 
@@ -138,64 +942,675 @@ pie showData
 
 ชื่อหมวดอาวุธอ้างอิงจาก Riot Arsenal และราคาจาก current weapons database ที่อัปเดตชุดอาวุธปัจจุบัน ซึ่งรวม **Bandit** และ **Outlaw** แล้วเรียบร้อย citeturn6view0turn21view0turn8search1
 
-| Weapon | Category | Price | Recoil / Accuracy แบบย่อ | ช่วงซื้อที่เหมาะ |
-|---|---|---:|---|---|
-| Classic | Sidearm | 0 | สมดุล, alt-fire เด่นระยะใกล้ | pistol / eco |
-| Bandit | Sidearm | 600 | semi-auto แม่น, ยิงหัวคุ้มราคา | light-buy / eco |
-| Shorty | Sidearm | 300 | spread หนัก, เก่งมากระยะประชิด | eco / anti-eco / มุมแคบ |
-| Frenzy | Sidearm | 450 | ยิงรัวแรง แต่คุมระยะไกลยาก | force / close-range |
-| Ghost | Sidearm | 500 | silenced, tap แม่นกลาง-ไกล | pistol / light-buy |
-| Sheriff | Sidearm | 800 | recoil สูงแต่ one-tap คุ้ม | eco / half-buy |
-| Stinger | SMG | 1,100 | recoil พุ่งแรง, เก่งระยะใกล้ | force / anti-eco |
-| Spectre | SMG | 1,600 | silenced, spray คุมง่ายกว่า Stinger | force / bonus / anti-eco |
-| Bucky | Shotgun | 850 | ยิงแคบใกล้ ๆ คุ้มมาก, ไกลตกแรง | eco / anti-rush |
-| Judge | Shotgun | 1,850 | auto shotgun, hold choke โหด | force / anti-eco / มุมควัน |
-| Bulldog | Rifle | 2,050 | ADS burst เสถียร, full-auto พอใช้ | half-buy / bonus |
-| Guardian | Rifle | 2,250 | semi-auto แม่นสูง, พึ่ง aim ล้วน | half-buy / bonus / long angle |
-| Phantom | Rifle | 2,900 | recoil นุ่มกว่า Vandal, silenced | full-buy / anti-eco / spray site |
-| Vandal | Rifle | 2,900 | recoil เด้งกว่า Phantom แต่ headshot ทุกระยะ | full-buy มาตรฐาน |
-| Marshal | Sniper | 950 | เบา, คล่อง, เปิดมุมดีมาก | eco / bonus / light-armor punish |
-| Outlaw | Sniper | 2,400 | burst-snipe สองนัด, เด่นมากใส่ light shield | half-buy punisher |
-| Operator | Sniper | 4,700 | angle hold แรงสุด แต่แพงมาก | full-buy เมื่อเศรษฐกิจพร้อม |
-| Ares | Heavy | 1,600 | สเปรย์ยาว, wallbang ได้ดี | force / anti-rush / niche |
-| Odin | Heavy | 3,200 | fire volume สูง, ทะลุกำแพงแรง | full-buy เฉพาะบางแผน |
-| Tactical Knife | Melee | 0 | ไม่มี recoil; ใช้เพื่อความเร็ววิ่ง/ตีปิดงาน | ทุกรอบเฉพาะ movement/last hit |
+# Valorant Weapon Knowledge Base
+
+## Weapon: Classic
+Category: Sidearm
+Price: 0
+Recoil_Accuracy:
+- สมดุล
+- alt-fire เด่นระยะใกล้
+Best_Buy_Phase:
+- pistol
+- eco
+Tags: pistol, free, close_range
+
+---
+
+## Weapon: Bandit
+Category: Sidearm
+Price: 600
+Recoil_Accuracy:
+- semi-auto แม่น
+- ยิงหัวคุ้ม
+Best_Buy_Phase:
+- light-buy
+- eco
+Tags: pistol, precision, budget
+
+---
+
+## Weapon: Shorty
+Category: Sidearm
+Price: 300
+Recoil_Accuracy:
+- spread สูง
+- โหดระยะประชิด
+Best_Buy_Phase:
+- eco
+- anti-eco
+- มุมแคบ
+Tags: shotgun, close_range, ambush
+
+---
+
+## Weapon: Frenzy
+Category: Sidearm
+Price: 450
+Recoil_Accuracy:
+- ยิงรัวแรง
+- คุมระยะไกลยาก
+Best_Buy_Phase:
+- force
+- close-range fight
+Tags: pistol, automatic, aggressive
+
+---
+
+## Weapon: Ghost
+Category: Sidearm
+Price: 500
+Recoil_Accuracy:
+- silenced
+- tap แม่น
+Best_Buy_Phase:
+- pistol
+- light-buy
+Tags: pistol, silent, precision
+
+---
+
+## Weapon: Sheriff
+Category: Sidearm
+Price: 800
+Recoil_Accuracy:
+- recoil สูง
+- one-tap ได้
+Best_Buy_Phase:
+- eco
+- half-buy
+Tags: pistol, high_damage, one_tap
+
+---
+
+## Weapon: Stinger
+Category: SMG
+Price: 1100
+Recoil_Accuracy:
+- recoil พุ่งแรง
+- DPS สูงใกล้
+Best_Buy_Phase:
+- force
+- anti-eco
+Tags: smg, close_range, fast
+
+---
+
+## Weapon: Spectre
+Category: SMG
+Price: 1600
+Recoil_Accuracy:
+- silenced
+- spray คุมง่าย
+Best_Buy_Phase:
+- force
+- bonus
+- anti-eco
+Tags: smg, balanced, mobility
+
+---
+
+## Weapon: Bucky
+Category: Shotgun
+Price: 850
+Recoil_Accuracy:
+- ใกล้แรงมาก
+- ไกลตกแรง
+Best_Buy_Phase:
+- eco
+- anti-rush
+Tags: shotgun, defense, choke
+
+---
+
+## Weapon: Judge
+Category: Shotgun
+Price: 1850
+Recoil_Accuracy:
+- auto shotgun
+- spam ใกล้โหด
+Best_Buy_Phase:
+- force
+- anti-eco
+- smoke play
+Tags: shotgun, aggressive, choke
+
+---
+
+## Weapon: Bulldog
+Category: Rifle
+Price: 2050
+Recoil_Accuracy:
+- ADS burst เสถียร
+- full-auto กลาง ๆ
+Best_Buy_Phase:
+- half-buy
+- bonus
+Tags: rifle, budget, mid_range
+
+---
+
+## Weapon: Guardian
+Category: Rifle
+Price: 2250
+Recoil_Accuracy:
+- semi-auto แม่นมาก
+- พึ่ง aim
+Best_Buy_Phase:
+- half-buy
+- long angle
+Tags: rifle, precision, long_range
+
+---
+
+## Weapon: Phantom
+Category: Rifle
+Price: 2900
+Recoil_Accuracy:
+- recoil นุ่ม
+- silenced
+Best_Buy_Phase:
+- full-buy
+- anti-eco
+- spray site
+Tags: rifle, spray, silent
+
+---
+
+## Weapon: Vandal
+Category: Rifle
+Price: 2900
+Recoil_Accuracy:
+- recoil เด้งกว่า Phantom
+- headshot ทุกระยะ
+Best_Buy_Phase:
+- full-buy มาตรฐาน
+Tags: rifle, one_tap, standard
+
+---
+
+## Weapon: Marshal
+Category: Sniper
+Price: 950
+Recoil_Accuracy:
+- เบา คล่อง
+- one-tap หัวแรง
+Best_Buy_Phase:
+- eco
+- bonus
+Tags: sniper, eco, fast
+
+---
+
+## Weapon: Outlaw
+Category: Sniper
+Price: 2400
+Recoil_Accuracy:
+- ยิง 2 นัด
+- ลงโทษ light armor
+Best_Buy_Phase:
+- half-buy
+Tags: sniper, anti_light
+
+---
+
+## Weapon: Operator
+Category: Sniper
+Price: 4700
+Recoil_Accuracy:
+- one-shot body
+- ถือมุมดีที่สุด
+Best_Buy_Phase:
+- full-buy (เศรษฐกิจพร้อม)
+Tags: sniper, expensive, one_shot
+
+---
+
+## Weapon: Ares
+Category: Heavy
+Price: 1600
+Recoil_Accuracy:
+- spray ยาว
+- wallbang ดี
+Best_Buy_Phase:
+- force
+- anti-rush
+Tags: heavy, spam, wallbang
+
+---
+
+## Weapon: Odin
+Category: Heavy
+Price: 3200
+Recoil_Accuracy:
+- fire rate สูง
+- spam แรงมาก
+Best_Buy_Phase:
+- full-buy (เฉพาะแผน)
+Tags: heavy, suppression, control
+
+---
+
+## Weapon: Tactical Knife
+Category: Melee
+Price: 0
+Recoil_Accuracy:
+- ไม่มี recoil
+- วิ่งเร็วที่สุด
+Best_Buy_Phase:
+- ใช้ movement
+- ปิดงาน
+Tags: melee, mobility, utility
 
 หมายเหตุ: คอลัมน์ recoil/accuracy และช่วงซื้อเป็นการสังเคราะห์จากหมวดอาวุธ, ราคาปัจจุบัน, และรูปแบบการยิงของฐานข้อมูลอาวุธ ไม่ใช่ “คำแนะนำทางการ” ตรงจาก Riot แต่ยึดชุดข้อมูลอาวุธปัจจุบันเป็นฐานทั้งหมด citeturn6view0turn21view0turn21view1turn21view2turn8search1
 
 ตารางแนะนำการซื้อด้านล่างเป็นแนวทางเชิงแข่งขันแบบย่อ: **Eco = ประหยัดมาก**, **Half-buy = มีของพอสู้**, **Full buy = ซื้อเต็ม**, **Anti-eco = เรามีเงินมากกว่าและคาดว่าศัตรูประหยัด**. หลักสำคัญคือ **อย่าทิ้ง utility หลักของ role เพื่ออัปปืนเกินจำเป็น**. citeturn21view0turn14view0turn19view2
 
-| Agent | Eco | Half-buy | Full buy | Anti-eco |
-|---|---|---|---|---|
-| Astra | Classic/Ghost + util | Spectre/Bulldog | Phantom/Vandal | Spectre/Phantom |
-| Breach | Classic/Frenzy + util | Spectre/Bulldog | Phantom/Vandal | Spectre/Phantom |
-| Brimstone | Classic/Ghost + util | Spectre/Bulldog | Phantom/Vandal | Spectre/Phantom |
-| Chamber | Headhunter/Bandit/Ghost | Marshal/Headhunter | Operator/Vandal | Marshal/Vandal |
-| Clove | Ghost/Frenzy + util | Spectre/Bulldog | Phantom/Vandal | Spectre/Phantom |
-| Cypher | Classic/Shorty | Judge/Spectre/Sheriff | Phantom/Vandal | Judge/Spectre |
-| Deadlock | Classic/Shorty | Judge/Bucky/Spectre | Phantom/Vandal | Judge/Spectre |
-| Fade | Classic/Ghost | Spectre/Guardian | Phantom/Vandal | Spectre/Phantom |
-| Gekko | Classic/Ghost | Spectre/Bulldog | Phantom/Vandal | Spectre/Phantom |
-| Harbor | Classic/Ghost | Spectre/Bulldog | Phantom/Vandal | Spectre/Phantom |
-| Iso | Sheriff/Bandit | Bulldog/Guardian/Spectre | Vandal/Phantom | Spectre/Vandal |
-| Jett | Sheriff/Bandit | Marshal/Stinger/Spectre | Operator/Vandal/Phantom | Spectre/Phantom |
-| KAY/O | Ghost/Frenzy | Spectre/Bulldog | Phantom/Vandal | Spectre/Phantom |
-| Killjoy | Classic/Shorty | Judge/Spectre | Phantom/Vandal | Judge/Spectre |
-| Miks | Classic/Ghost + util | Spectre/Bulldog | Phantom/Vandal | Spectre/Phantom |
-| Neon | Frenzy/Shorty | Stinger/Spectre/Judge | Phantom/Vandal | Spectre/Judge |
-| Omen | Ghost/Classic | Spectre/Bulldog | Phantom/Vandal | Spectre/Phantom |
-| Phoenix | Frenzy/Ghost | Spectre/Bulldog | Phantom/Vandal | Spectre/Phantom |
-| Raze | Shorty/Frenzy | Stinger/Judge/Spectre | Vandal/Phantom | Judge/Spectre |
-| Reyna | Sheriff/Ghost | Bulldog/Guardian/Spectre | Vandal/Phantom | Spectre/Vandal |
-| Sage | Classic/Ghost | Spectre/Bulldog | Phantom/Vandal | Spectre/Phantom |
-| Skye | Ghost/Frenzy | Spectre/Bulldog | Phantom/Vandal | Spectre/Phantom |
-| Sova | Classic/Ghost | Guardian/Spectre/Ares | Vandal/Phantom/Odin | Spectre/Guardian |
-| Tejo | Classic/Ghost | Bulldog/Guardian/Spectre | Vandal/Phantom | Spectre/Guardian |
-| Veto | Ghost/Shorty | Spectre/Judge | Phantom/Vandal | Judge/Spectre |
-| Viper | Classic/Ghost | Spectre/Bulldog | Phantom/Vandal | Spectre/Phantom |
-| Vyse | Classic/Shorty | Judge/Spectre | Phantom/Vandal | Judge/Spectre |
-| Waylay | Sheriff/Bandit | Stinger/Spectre | Vandal/Phantom | Spectre/Phantom |
-| Yoru | Ghost/Sheriff | Spectre/Bulldog | Vandal/Phantom | Spectre/Vandal |
+# Valorant Agent Loadout Recommendation Knowledge Base
+
+## Agent: Astra
+Role: Controller
+Eco:
+- Classic / Ghost + utility
+Half_Buy:
+- Spectre / Bulldog
+Full_Buy:
+- Phantom / Vandal
+Anti_Eco:
+- Spectre / Phantom
+Tags: controller, balanced, utility
+
+---
+
+## Agent: Breach
+Role: Initiator
+Eco:
+- Classic / Frenzy + utility
+Half_Buy:
+- Spectre / Bulldog
+Full_Buy:
+- Phantom / Vandal
+Anti_Eco:
+- Spectre / Phantom
+Tags: initiator, entry_support
+
+---
+
+## Agent: Brimstone
+Role: Controller
+Eco:
+- Classic / Ghost + utility
+Half_Buy:
+- Spectre / Bulldog
+Full_Buy:
+- Phantom / Vandal
+Anti_Eco:
+- Spectre / Phantom
+Tags: controller, execute
+
+---
+
+## Agent: Chamber
+Role: Sentinel
+Eco:
+- Headhunter / Bandit / Ghost
+Half_Buy:
+- Marshal / Headhunter
+Full_Buy:
+- Operator / Vandal
+Anti_Eco:
+- Marshal / Vandal
+Tags: sentinel, sniper, pick
+
+---
+
+## Agent: Clove
+Role: Controller
+Eco:
+- Ghost / Frenzy + utility
+Half_Buy:
+- Spectre / Bulldog
+Full_Buy:
+- Phantom / Vandal
+Anti_Eco:
+- Spectre / Phantom
+Tags: controller, aggressive
+
+---
+
+## Agent: Cypher
+Role: Sentinel
+Eco:
+- Classic / Shorty
+Half_Buy:
+- Judge / Spectre / Sheriff
+Full_Buy:
+- Phantom / Vandal
+Anti_Eco:
+- Judge / Spectre
+Tags: sentinel, trap, defense
+
+---
+
+## Agent: Deadlock
+Role: Sentinel
+Eco:
+- Classic / Shorty
+Half_Buy:
+- Judge / Bucky / Spectre
+Full_Buy:
+- Phantom / Vandal
+Anti_Eco:
+- Judge / Spectre
+Tags: sentinel, anti_rush
+
+---
+
+## Agent: Fade
+Role: Initiator
+Eco:
+- Classic / Ghost
+Half_Buy:
+- Spectre / Guardian
+Full_Buy:
+- Phantom / Vandal
+Anti_Eco:
+- Spectre / Phantom
+Tags: initiator, tracking
+
+---
+
+## Agent: Gekko
+Role: Initiator
+Eco:
+- Classic / Ghost
+Half_Buy:
+- Spectre / Bulldog
+Full_Buy:
+- Phantom / Vandal
+Anti_Eco:
+- Spectre / Phantom
+Tags: initiator, utility
+
+---
+
+## Agent: Harbor
+Role: Controller
+Eco:
+- Classic / Ghost
+Half_Buy:
+- Spectre / Bulldog
+Full_Buy:
+- Phantom / Vandal
+Anti_Eco:
+- Spectre / Phantom
+Tags: controller, wall
+
+---
+
+## Agent: Iso
+Role: Duelist
+Eco:
+- Sheriff / Bandit
+Half_Buy:
+- Bulldog / Guardian / Spectre
+Full_Buy:
+- Vandal / Phantom
+Anti_Eco:
+- Spectre / Vandal
+Tags: duelist, aim
+
+---
+
+## Agent: Jett
+Role: Duelist
+Eco:
+- Sheriff / Bandit
+Half_Buy:
+- Marshal / Stinger / Spectre
+Full_Buy:
+- Operator / Vandal / Phantom
+Anti_Eco:
+- Spectre / Phantom
+Tags: duelist, sniper, entry
+
+---
+
+## Agent: KAY/O
+Role: Initiator
+Eco:
+- Ghost / Frenzy
+Half_Buy:
+- Spectre / Bulldog
+Full_Buy:
+- Phantom / Vandal
+Anti_Eco:
+- Spectre / Phantom
+Tags: initiator, anti_utility
+
+---
+
+## Agent: Killjoy
+Role: Sentinel
+Eco:
+- Classic / Shorty
+Half_Buy:
+- Judge / Spectre
+Full_Buy:
+- Phantom / Vandal
+Anti_Eco:
+- Judge / Spectre
+Tags: sentinel, anchor
+
+---
+
+## Agent: Miks
+Role: Controller
+Eco:
+- Classic / Ghost + utility
+Half_Buy:
+- Spectre / Bulldog
+Full_Buy:
+- Phantom / Vandal
+Anti_Eco:
+- Spectre / Phantom
+Tags: controller, support
+
+---
+
+## Agent: Neon
+Role: Duelist
+Eco:
+- Frenzy / Shorty
+Half_Buy:
+- Stinger / Spectre / Judge
+Full_Buy:
+- Phantom / Vandal
+Anti_Eco:
+- Spectre / Judge
+Tags: duelist, speed
+
+---
+
+## Agent: Omen
+Role: Controller
+Eco:
+- Ghost / Classic
+Half_Buy:
+- Spectre / Bulldog
+Full_Buy:
+- Phantom / Vandal
+Anti_Eco:
+- Spectre / Phantom
+Tags: controller, flexible
+
+---
+
+## Agent: Phoenix
+Role: Duelist
+Eco:
+- Frenzy / Ghost
+Half_Buy:
+- Spectre / Bulldog
+Full_Buy:
+- Phantom / Vandal
+Anti_Eco:
+- Spectre / Phantom
+Tags: duelist, entry
+
+---
+
+## Agent: Raze
+Role: Duelist
+Eco:
+- Shorty / Frenzy
+Half_Buy:
+- Stinger / Judge / Spectre
+Full_Buy:
+- Vandal / Phantom
+Anti_Eco:
+- Judge / Spectre
+Tags: duelist, explosive
+
+---
+
+## Agent: Reyna
+Role: Duelist
+Eco:
+- Sheriff / Ghost
+Half_Buy:
+- Bulldog / Guardian / Spectre
+Full_Buy:
+- Vandal / Phantom
+Anti_Eco:
+- Spectre / Vandal
+Tags: duelist, carry
+
+---
+
+## Agent: Sage
+Role: Sentinel
+Eco:
+- Classic / Ghost
+Half_Buy:
+- Spectre / Bulldog
+Full_Buy:
+- Phantom / Vandal
+Anti_Eco:
+- Spectre / Phantom
+Tags: sentinel, support
+
+---
+
+## Agent: Skye
+Role: Initiator
+Eco:
+- Ghost / Frenzy
+Half_Buy:
+- Spectre / Bulldog
+Full_Buy:
+- Phantom / Vandal
+Anti_Eco:
+- Spectre / Phantom
+Tags: initiator, support
+
+---
+
+## Agent: Sova
+Role: Initiator
+Eco:
+- Classic / Ghost
+Half_Buy:
+- Guardian / Spectre / Ares
+Full_Buy:
+- Vandal / Phantom / Odin
+Anti_Eco:
+- Spectre / Guardian
+Tags: initiator, long_range
+
+---
+
+## Agent: Tejo
+Role: Initiator
+Eco:
+- Classic / Ghost
+Half_Buy:
+- Bulldog / Guardian / Spectre
+Full_Buy:
+- Vandal / Phantom
+Anti_Eco:
+- Spectre / Guardian
+Tags: initiator, artillery
+
+---
+
+## Agent: Veto
+Role: Sentinel
+Eco:
+- Ghost / Shorty
+Half_Buy:
+- Spectre / Judge
+Full_Buy:
+- Phantom / Vandal
+Anti_Eco:
+- Judge / Spectre
+Tags: sentinel, anti_utility
+
+---
+
+## Agent: Viper
+Role: Controller
+Eco:
+- Classic / Ghost
+Half_Buy:
+- Spectre / Bulldog
+Full_Buy:
+- Phantom / Vandal
+Anti_Eco:
+- Spectre / Phantom
+Tags: controller, postplant
+
+---
+
+## Agent: Vyse
+Role: Sentinel
+Eco:
+- Classic / Shorty
+Half_Buy:
+- Judge / Spectre
+Full_Buy:
+- Phantom / Vandal
+Anti_Eco:
+- Judge / Spectre
+Tags: sentinel, trap
+
+---
+
+## Agent: Waylay
+Role: Duelist
+Eco:
+- Sheriff / Bandit
+Half_Buy:
+- Stinger / Spectre
+Full_Buy:
+- Vandal / Phantom
+Anti_Eco:
+- Spectre / Phantom
+Tags: duelist, mobility
+
+---
+
+## Agent: Yoru
+Role: Duelist
+Eco:
+- Ghost / Sheriff
+Half_Buy:
+- Spectre / Bulldog
+Full_Buy:
+- Vandal / Phantom
+Anti_Eco:
+- Spectre / Vandal
+Tags: duelist, deception
 
 ## เมตาหลังแพตช์ 12.08 และแหล่งอ้างอิงหลัก
 
