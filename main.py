@@ -1,9 +1,9 @@
 import os
 from dotenv import load_dotenv
 
-# 1. นำเข้า Library (ใช้เฉพาะตัวที่จำเป็น)
+# 1. นำเข้า Library (แก้ไขชื่อให้ถูกต้อง)
 from langchain_openai import ChatOpenAI
-from langchain_classic.agents import AgentExecutor, create_tool_calling_agent
+from langchain.agents import AgentExecutor, create_tool_calling_agent
 from langchain_core.prompts import ChatPromptTemplate
 from tools import search_agent_strategy, search_map_strategy, search_weapon_strategy, search_update_patch, calculate_economy
 from langchain_core.messages import HumanMessage, AIMessage
@@ -16,25 +16,32 @@ typhoon_api_key = os.environ.get("TYPHOON_API_KEY")
 
 def load_and_tag_data(file_path, category):
     from langchain_core.documents import Document
+    import re
     
     with open(file_path, "r", encoding="utf-8") as f:
         content = f.read()
     
-    # แยกข้อมูลตามหัวข้อ ### (เช่น ### Sage, ### Bandit)
-    sections = content.split("### ")
+    # แยกด้วย "## " เพื่อแบ่งหัวข้อ
+    sections = re.split(r'\n## ', content)
     tagged_docs = []
     
     for section in sections:
-        if not section.strip(): continue
+        if not section.strip(): 
+            continue
         
-        # ดึงบรรทัดแรกมาเป็นชื่อ (name) สำหรับทำ Metadata
         lines = section.strip().split("\n")
-        item_name = lines[0].strip().lower()
+        header = lines[0].strip().lower()
         
-        # ติดป้ายกำกับ (Metadata) ให้แต่ละก้อนข้อมูล
+        # ทำความสะอาดชื่อเพื่อใช้เป็น Metadata
+        clean_name = header.replace("weapon:", "").replace("scenario:", "").strip()
+        
         doc = Document(
-            page_content="### " + section,
-            metadata={"category": category, "name": item_name}
+            page_content="## " + section,
+            metadata={
+                "category": category, 
+                "name": clean_name,
+                "type": "weapon" if "weapon:" in header else "strategy"
+            }
         )
         tagged_docs.append(doc)
     return tagged_docs
@@ -57,32 +64,35 @@ def main():
         calculate_economy
     ]
 
-    # 4. สร้าง Prompt พร้อมช่องใส่ประวัติการคุย (chat_history)
+    # --- System Prompt (เพิ่มกฎป้องกันความจำเก่าตีกับความจำใหม่) ---
+    system_instruction = """คุณคือผู้ช่วยโค้ชเกม Valorant สุดอัจฉริยะ หน้าที่ของคุณคือตอบคำถามและให้คำแนะนำผู้เล่น
+
+**กฎเหล็กที่คุณต้องปฏิบัติตามอย่างเคร่งครัด:**
+1. ห้ามตอบคำถามเกี่ยวกับ ราคา (Price), ดาเมจ (Damage), สถิติอาวุธ, หรือสกิลของเอเจนต์ จากความจำของคุณเองเด็ดขาด!
+2. เมื่อผู้ใช้ถามถึงอาวุธ (เช่น Guardian, Ghost, Vandal) หรือราคา คุณ **ต้อง** เรียกใช้ Tool `search_weapon_strategy` เสมอ ห้ามข้ามขั้นตอนนี้
+3. หากค้นหาผ่าน Tool แล้วไม่พบข้อมูล หรือในรายละเอียดไม่ได้ระบุ 'ตัวเลขราคา' อย่างชัดเจน ให้ตอบตามตรงว่า "ไม่มีข้อมูลในระบบ" ห้ามเดา และห้ามแต่งตัวเลขขึ้นมาเอง
+4. หน่วยเงินในเกมคือ "Credits" (เครดิต) เท่านั้น ห้ามใช้ดอลลาร์
+5. ถ้าไม่พบข้อมูล Agent (เช่น Clove) ให้ถือว่า "ไม่พบข้อมูล" ทันที ห้ามใช้ข้อมูลตัวอื่นแทน
+6. ข้อควรระวัง: เมื่อผู้ใช้ถามคำถามใหม่ คุณต้องเริ่มต้นค้นหาผ่าน Tool ใหม่ทุกครั้ง ห้ามใช้ข้อมูลราคาหรือสถิติเก่าที่เคยตอบไปแล้วมาตอบซ้ำในบริบทใหม่"""
+
+    # 4. สร้าง Prompt
     prompt = ChatPromptTemplate.from_messages([
-        ("system", "คุณคือผู้ช่วยโค้ชเกม Valorant สุดอัจฉริยะ หน้าที่ของคุณคือตอบคำถามและให้คำแนะนำผู้เล่น\n"
-                   "**กฎสำคัญ:**\n"
-                   "1. เรียกใช้ Tool หลายตัวต่อเนื่องกันหากจำเป็น\n"
-                   "2. ห้ามแนะนำไอเทมจากเกมอื่น สกิลผูกกับตัวละครเท่านั้น\n"
-                   "3. ห้ามเดาคำตอบเอง หากไม่พบข้อมูลให้แจ้งระบบขัดข้อง\n"
-                   "4. ทับศัพท์ภาษาอังกฤษเสมอ (เช่น Force Buy, Eco)"
-                   "ถ้าผลลัพธ์จาก Tool ไม่มีชื่อ Agent ที่ผู้ใช้ถาม (เช่น Clove)"
-                    "ให้ถือว่า ไม่พบข้อมูล ทันที ห้ามใช้ข้อมูลจาก Agent อื่นแทนเด็ดขาด"),
+        ("system", system_instruction),
         MessagesPlaceholder(variable_name="chat_history"),
         ("human", "{input}"),
         MessagesPlaceholder(variable_name="agent_scratchpad"), 
     ])
-
-    # 5. สร้าง Agent และ Executor 
+    
+    # 5. สร้าง Agent และ Executor
     agent = create_tool_calling_agent(llm, tools, prompt)
     
-    # ลบส่วน memory เก่าออก และใช้ verbose=True เพื่อโชว์ Log (ตามเกณฑ์อาจารย์)
     agent_executor = AgentExecutor(
-    agent=agent, 
-    tools=tools, 
-    verbose=True,
-    max_iterations=25,       # 1. เพิ่มจำนวนครั้งที่ให้ Agent คิด (ค่าเริ่มต้นมักจะเป็น 3-5)
-    handle_parsing_errors=True  # 2. ป้องกัน Agent พังเวลา LLM คืนค่าฟอร์แมตแปลกๆ มา
-)
+        agent=agent, 
+        tools=tools, 
+        verbose=True,
+        max_iterations=25,
+        handle_parsing_errors=True
+    )
     
     # 6. สมุดจดประวัติการคุยแบบ Manual
     chat_history = []
@@ -96,22 +106,24 @@ def main():
             break
         
         try:
-            # ส่ง input และประวัติการคุยเข้าไป
+            # --- แก้ปัญหาถามรอบที่ 4 แล้วเพี้ยน: จำกัดประวัติเหลือแค่ 4 ข้อความล่าสุด ---
+            recent_history = chat_history[-4:] if len(chat_history) > 4 else chat_history
+
             response = agent_executor.invoke({
                 "input": user_input, 
-                "chat_history": chat_history
+                "chat_history": recent_history
             })
             
             final_answer = response['output']
             
-            # จัดการข้อความที่ได้รับ
+            # จัดการ Format ข้อความ
             if isinstance(final_answer, list):
                 final_answer = "".join([item.get('text', str(item)) if isinstance(item, dict) else str(item) for item in final_answer])
 
             print(f"\n🧠 Agent ตอบ:\n{final_answer}\n")
             print("-" * 50)
             
-            # 7. บันทึกลงสมุดประวัติ (เพื่อให้คุยต่อเนื่องได้)
+            # 7. บันทึกลงสมุดประวัติ
             chat_history.append(HumanMessage(content=user_input))
             chat_history.append(AIMessage(content=final_answer))
             

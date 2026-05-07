@@ -24,12 +24,9 @@ def get_or_create_db(db_variable, file_name):
     if db_variable is not None:
         return db_variable
         
-    # 2. เรียกใช้โมเดลฟรีจาก HuggingFace (รองรับภาษาไทย)
     embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
-    
     index_folder = f"{file_name}_faiss"
 
-    # 3. ระบบเซฟและโหลดแบบ Local 
     if os.path.exists(index_folder):
         print(f"กำลังโหลดฐานข้อมูล {file_name} จากเครื่อง (ไวมาก!)...")
         return FAISS.load_local(index_folder, embeddings, allow_dangerous_deserialization=True)
@@ -40,14 +37,26 @@ def get_or_create_db(db_variable, file_name):
         docs = loader.load()
         
         md_splits = markdown_splitter.split_text(docs[0].page_content)
+        
+        # --- จุดที่แก้ไข: ระบุหมวดหมู่ให้ตรงกับไฟล์ ---
+        category = "ข้อมูล"
+        if "gun" in file_name.lower(): category = "อาวุธ"
+        elif "agent" in file_name.lower(): category = "เอเจนต์"
+        elif "map" in file_name.lower(): category = "แผนที่"
+        elif "money" in file_name.lower(): category = "ระบบเศรษฐกิจ"
+        
         for doc in md_splits:
             if "Specific Item" in doc.metadata:
                 name = doc.metadata["Specific Item"]
-                doc.page_content = f"Agent: {name}\n" + doc.page_content
+                doc.page_content = f"[{category}: {name}]\n" + doc.page_content
+            elif "Sub Topic" in doc.metadata: # เผื่อกรณีที่ไม่มี Specific Item
+                name = doc.metadata["Sub Topic"]
+                doc.page_content = f"[{category}: {name}]\n" + doc.page_content
+                
         final_splits = text_splitter.split_documents(md_splits)
         
         db = FAISS.from_documents(final_splits, embeddings)
-        db.save_local(index_folder) # เซฟลงคอมไว้ใช้รอบหน้า
+        db.save_local(index_folder) 
         
         return db
     except Exception as e:
@@ -96,7 +105,12 @@ def search_map_strategy(query: str) -> str:
 
 @tool
 def search_weapon_strategy(query: str) -> str:
-    """ใช้ Tool นี้เมื่อผู้ใช้ถามเกี่ยวกับ 'อาวุธปืน' หรือ 'การเงิน'"""
+    """ใช้ Tool นี้ทุกครั้งเมื่อผู้ใช้ถามเกี่ยวกับข้อมูลอาวุธปืน!
+    **ข้อควรระวังสำคัญสำหรับการตั้งคำค้นหา (query):**
+    - หากผู้ใช้ถามถึง 'ราคา' คุณต้องใส่คำว่า "Price" ลงไปใน query ด้วย เช่น "Price Guardian", "Price Ghost"
+    - หากถามถึง 'ดาเมจ' คุณต้องใส่คำว่า "Damage" ลงไปใน query ด้วย เช่น "Damage Vandal"
+    ห้ามใช้ภาษาไทยในการค้นหาสถิติ (ห้ามใช้คำว่า ราคา หรือ ดาเมจ ใน query) เพราะข้อมูลในฐานเป็นภาษาอังกฤษ"""
+    
     global gun_vector_db
     gun_vector_db = get_or_create_db(gun_vector_db, "gun.md")
     
