@@ -138,7 +138,12 @@ def search_update_patch(query: str) -> str:
 
 @tool
 def calculate_economy(current_money: int, last_round_result: str):
-    """คำนวณเงินในรอบถัดไปตามกฎของ VALORANT"""
+    """
+    Use this tool ALWAYS when calculating the player's money for the NEXT ROUND.
+    - current_money: จำนวนเงินที่มีในรอบปัจจุบัน (integer)
+    - last_round_result: ผลการแข่งขันรอบนี้ ใส่ค่า 'win' (ชนะ) หรือ 'loss' (แพ้) เท่านั้น
+    DO NOT use this tool for calculating money in the current round.
+    """
     
     # --- จุดที่ 1: การดัก Error (Guardrails) ---
     if not isinstance(current_money, int):
@@ -147,22 +152,19 @@ def calculate_economy(current_money: int, last_round_result: str):
     if current_money < 0:
         return "ข้อผิดพลาด: เงินปัจจุบันติดลบไม่ได้ โปรดตรวจสอบข้อมูลอีกครั้ง"
 
-    if current_money > 9000: # กฎของเกมเงินสูงสุดคือ 9000
-        current_money = 9000
-
     # --- จุดที่ 2: Logic การคำนวณ ---
     try:
-        # สมมติ Logic พื้นฐาน (คุณสามารถปรับตามสูตรจริงของคุณได้)
         base_win = 3000
-        base_loss = 1900
-        spike_bonus = 300
+        base_loss = 1900 # สมมติว่าแพ้รอบแรก (ถ้าจะทำ Loss Streak ต้องรับค่าตัวแปรเพิ่ม)
         
         if last_round_result.lower() == 'win':
-            next_round_money = current_money + base_win + spike_bonus
-        else:
+            next_round_money = current_money + base_win
+        elif last_round_result.lower() == 'loss':
             next_round_money = current_money + base_loss
+        else:
+            return "ข้อผิดพลาด: last_round_result ต้องเป็น 'win' หรือ 'loss' เท่านั้น"
             
-        # จำกัดเงินไม่ให้เกิน 9000
+        # จำกัดเงินไม่ให้เกิน 9000 (Max Cap)
         final_money = min(next_round_money, 9000)
         
         return f"คุณจะมีเงินในรอบหน้าประมาณ {final_money} เครดิต แนะนำให้วางแผนการซื้อตามงบนี้"
