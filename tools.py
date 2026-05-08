@@ -74,14 +74,17 @@ def get_or_create_db(db_variable, file_name):
 @tool
 def search_agent_money(query: str) -> str:
     """ใช้ Tool นี้เมื่อผู้ใช้ถามเกี่ยวกับการจัดการเงิน (Economy), การซื้อของ (Buy/Save/Force), หรือกลยุทธ์การตัดสินใจตามสถานการณ์ในแต่ละรอบ"""
-    global agent_vector_db
-    agent_vector_db = get_or_create_db(agent_vector_db, "money.md") # ชี้ไปที่ไฟล์ใหม่ของคุณ
+    global money_vector_db 
+    money_vector_db = get_or_create_db(money_vector_db, "money.md") 
     
-    if agent_vector_db is None:
+    if money_vector_db is None:
         return "ระบบฐานข้อมูล money ขัดข้อง"
         
-    docs = agent_vector_db.similarity_search(query, k=5)
+    docs = money_vector_db.similarity_search(query, k=5)
+    if not docs: # ถ้าหาไม่เจอเลย
+        return "ไม่มีข้อมูลในระบบ กรุณาหยุดค้นหาและแจ้งผู้ใช้ว่าไม่พบข้อมูล"
     return "\n\n".join([f"อ้างอิงจากหัวข้อ: {doc.metadata}\nรายละเอียด: {doc.page_content}" for doc in docs])
+    
 
 @tool
 def search_agent_strategy(query: str) -> str:
@@ -93,6 +96,8 @@ def search_agent_strategy(query: str) -> str:
         return "ระบบฐานข้อมูล Agent ขัดข้อง"
         
     docs = agent_vector_db.similarity_search(query, k=5)
+    if not docs: # ถ้าหาไม่เจอเลย
+        return "ไม่มีข้อมูลในระบบ กรุณาหยุดค้นหาและแจ้งผู้ใช้ว่าไม่พบข้อมูล"
     return "\n\n".join([f"อ้างอิงจากหัวข้อ: {doc.metadata}\nรายละเอียด: {doc.page_content}" for doc in docs])
 
 @tool
@@ -105,15 +110,17 @@ def search_map_strategy(query: str) -> str:
         return "ระบบฐานข้อมูลแผนที่ขัดข้อง"
         
     docs = map_vector_db.similarity_search(query, k=5)
+    if not docs: # ถ้าหาไม่เจอเลย
+        return "ไม่มีข้อมูลในระบบ กรุณาหยุดค้นหาและแจ้งผู้ใช้ว่าไม่พบข้อมูล"
     return "\n\n".join([f"อ้างอิงจากหัวข้อ: {doc.metadata}\nรายละเอียด: {doc.page_content}" for doc in docs])
 
 @tool
 def search_weapon_strategy(query: str) -> str:
-    """ใช้ Tool นี้ทุกครั้งเมื่อผู้ใช้ถามเกี่ยวกับข้อมูลอาวุธปืน!
+    """ใช้ Tool นี้ทุกครั้งเมื่อผู้ใช้ถามเกี่ยวกับข้อมูลอาวุธปืน หรือ เกราะ (Shields/Armor)!
     **ข้อควรระวังสำคัญสำหรับการตั้งคำค้นหา (query):**
-    - หากผู้ใช้ถามถึง 'ราคา' คุณต้องใส่คำว่า "Price" ลงไปใน query ด้วย เช่น "Price Guardian", "Price Ghost"
-    - หากถามถึง 'ดาเมจ' คุณต้องใส่คำว่า "Damage" ลงไปใน query ด้วย เช่น "Damage Vandal"
-    ห้ามใช้ภาษาไทยในการค้นหาสถิติ (ห้ามใช้คำว่า ราคา หรือ ดาเมจ ใน query) เพราะข้อมูลในฐานเป็นภาษาอังกฤษ"""
+    - หากถามถึง 'ราคา' ต้องใส่คำว่า "Price" ลงไปใน query ด้วย เช่น "Price Guardian", "Price Heavy Armor", "Price Light Armor"
+    - หากถามถึง 'ดาเมจ' ต้องใส่คำว่า "Damage" ลงไปใน query ด้วย เช่น "Damage Vandal"
+    ห้ามใช้ภาษาไทยในการค้นหาสถิติ (ห้ามใช้คำว่า ราคา หรือ ดาเมจ ใน query)"""
     
     global gun_vector_db
     gun_vector_db = get_or_create_db(gun_vector_db, "gun.md")
@@ -122,6 +129,8 @@ def search_weapon_strategy(query: str) -> str:
          return "ระบบฐานข้อมูลอาวุธขัดข้อง"
          
     docs = gun_vector_db.similarity_search(query, k=5)
+    if not docs: # ถ้าหาไม่เจอเลย
+        return "ไม่มีข้อมูลในระบบ กรุณาหยุดค้นหาและแจ้งผู้ใช้ว่าไม่พบข้อมูล"
     return "\n\n".join([f"อ้างอิงจากหัวข้อ: {doc.metadata}\nรายละเอียด: {doc.page_content}" for doc in docs])
 
 @tool
@@ -134,41 +143,44 @@ def search_update_patch(query: str) -> str:
          return "ระบบฐานข้อมูลแพตช์ขัดข้อง"
          
     docs = update_vector_db.similarity_search(query, k=5)
+    if not docs: # ถ้าหาไม่เจอเลย
+        return "ไม่มีข้อมูลในระบบ กรุณาหยุดค้นหาและแจ้งผู้ใช้ว่าไม่พบข้อมูล"
     return "\n\n".join([f"อ้างอิงจากหัวข้อ: {doc.metadata}\nรายละเอียด: {doc.page_content}" for doc in docs])
 
 @tool
-def calculate_economy(current_money: int, last_round_result: str):
+def calculate_economy(current_money: int, last_round_result: str, loss_streak: int = 0, is_save_on_loss: bool = False):
     """
     Use this tool ALWAYS when calculating the player's money for the NEXT ROUND.
     - current_money: จำนวนเงินที่มีในรอบปัจจุบัน (integer)
-    - last_round_result: ผลการแข่งขันรอบนี้ ใส่ค่า 'win' (ชนะ) หรือ 'loss' (แพ้) เท่านั้น
-    DO NOT use this tool for calculating money in the current round.
+    - last_round_result: ผลการแข่งขันรอบนี้ 'win' (ชนะ) หรือ 'loss' (แพ้)
+    - loss_streak: จำนวนรอบที่แพ้ติดต่อกัน (ใส่ 1, 2, หรือ 3 ขึ้นไป) ถ้าชนะให้ใส่ 0
+    - is_save_on_loss: ใส่ True ถ้าทีม 'แพ้' แต่ผู้เล่น 'รอดชีวิต' (เซฟปืน) ไม่งั้นใส่ False
     """
-    
-    # --- จุดที่ 1: การดัก Error (Guardrails) ---
     if not isinstance(current_money, int):
-        return "ข้อผิดพลาด: current_money ต้องเป็นตัวเลขจำนวนเต็มเท่านั้น"
-    
+        return "ข้อผิดพลาด: current_money ต้องเป็นตัวเลข"
     if current_money < 0:
-        return "ข้อผิดพลาด: เงินปัจจุบันติดลบไม่ได้ โปรดตรวจสอบข้อมูลอีกครั้ง"
+        return "ข้อผิดพลาด: เงินปัจจุบันติดลบไม่ได้"
 
-    # --- จุดที่ 2: Logic การคำนวณ ---
     try:
-        base_win = 3000
-        base_loss = 1900 # สมมติว่าแพ้รอบแรก (ถ้าจะทำ Loss Streak ต้องรับค่าตัวแปรเพิ่ม)
-        
         if last_round_result.lower() == 'win':
-            next_round_money = current_money + base_win
+            next_round_money = current_money + 3000
         elif last_round_result.lower() == 'loss':
-            next_round_money = current_money + base_loss
+            # ดักกฎ Save Penalty: รอดตอนแพ้ได้แค่ 1000
+            if is_save_on_loss:
+                next_round_money = current_money + 1000
+            else:
+                # คำนวณ Loss Streak (1900 -> 2400 -> 2900)
+                if loss_streak <= 1:
+                    next_round_money = current_money + 1900
+                elif loss_streak == 2:
+                    next_round_money = current_money + 2400
+                else:
+                    next_round_money = current_money + 2900
         else:
             return "ข้อผิดพลาด: last_round_result ต้องเป็น 'win' หรือ 'loss' เท่านั้น"
             
-        # จำกัดเงินไม่ให้เกิน 9000 (Max Cap)
         final_money = min(next_round_money, 9000)
-        
         return f"คุณจะมีเงินในรอบหน้าประมาณ {final_money} เครดิต แนะนำให้วางแผนการซื้อตามงบนี้"
 
     except Exception as e:
-        # --- จุดที่ 3: ดัก Exception ที่ไม่คาดคิด ---
         return f"เกิดข้อผิดพลาดในการคำนวณ: {str(e)}"
