@@ -46,12 +46,16 @@ def get_or_create_db(db_variable, file_name):
         elif "money" in file_name.lower(): category = "ระบบเศรษฐกิจ"
         
         for doc in md_splits:
+            header_text = ""
+            if "Main Topic" in doc.metadata:
+                header_text += f"หมวดหมู่: {doc.metadata['Main Topic']}\n"
+            if "Sub Topic" in doc.metadata:
+                header_text += f"หัวข้อ: {doc.metadata['Sub Topic']}\n"
             if "Specific Item" in doc.metadata:
-                name = doc.metadata["Specific Item"]
-                doc.page_content = f"[{category}: {name}]\n" + doc.page_content
-            elif "Sub Topic" in doc.metadata: # เผื่อกรณีที่ไม่มี Specific Item
-                name = doc.metadata["Sub Topic"]
-                doc.page_content = f"[{category}: {name}]\n" + doc.page_content
+                header_text += f"รายละเอียด: {doc.metadata['Specific Item']}\n"
+            
+            # นำชื่อหัวข้อทั้งหมดกลับไปแปะหน้าเนื้อหา เพื่อให้ AI ค้นหาคำเจอ
+            doc.page_content = header_text + doc.page_content
                 
         final_splits = text_splitter.split_documents(md_splits)
         
