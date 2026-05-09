@@ -13,7 +13,7 @@ Riot ปัจจุบันแสดงแผนที่มาตรฐาน
 
 # Valorant Map Knowledge Base
 
-## Map: Ascent
+## Ascent
 Sites: 2
 Rotation_Speed: Medium
 Playstyle: Slow / Hybrid
@@ -26,7 +26,7 @@ Tags: mid_control, hybrid, slow_play
 
 ---
 
-## Map: Bind
+## Bind
 Sites: 2
 Rotation_Speed: Fast
 Playstyle: Fast / Fake Rotation
@@ -40,7 +40,7 @@ Tags: fast_play, teleport, fake
 
 ---
 
-## Map: Haven
+## Haven
 Sites: 3
 Rotation_Speed: Medium-Fast
 Playstyle: Hybrid / Heavy Fake
@@ -53,7 +53,7 @@ Tags: triple_site, fake, flexible
 
 ---
 
-## Map: Split
+## Split
 Sites: 2
 Rotation_Speed: Fast
 Playstyle: Slow → Split Push
@@ -67,7 +67,7 @@ Tags: vertical, mid_control, split
 
 ---
 
-## Map: Icebox
+## Icebox
 Sites: 2
 Rotation_Speed: Medium
 Playstyle: Hybrid / Slow
@@ -81,7 +81,7 @@ Tags: vertical, utility_heavy
 
 ---
 
-## Map: Breeze
+## Breeze
 Sites: 2
 Rotation_Speed: Medium
 Playstyle: Hybrid / Fast
@@ -94,7 +94,7 @@ Tags: open_map, long_range, sniper
 
 ---
 
-## Map: Fracture
+## Fracture
 Sites: 2
 Rotation_Speed: Fast
 Playstyle: Fast / Multi-direction Attack
@@ -108,7 +108,7 @@ Tags: split_attack, fast_play, chaos
 
 ---
 
-## Map: Pearl
+## Pearl
 Sites: 2
 Rotation_Speed: Slow
 Playstyle: Slow / Mid Control
@@ -121,7 +121,7 @@ Tags: control, slow_play
 
 ---
 
-## Map: Lotus
+## Lotus
 Sites: 3
 Rotation_Speed: Fast
 Playstyle: Fast / Group Push
@@ -136,7 +136,7 @@ Tags: fast_rotation, triple_site, utility
 
 ---
 
-## Map: Sunset
+## Sunset
 Sites: 2
 Rotation_Speed: Medium
 Playstyle: Slow / Mid Control
@@ -150,7 +150,7 @@ Tags: mid_control, structured
 
 ---
 
-## Map: Abyss
+## Abyss
 Sites: 2
 Rotation_Speed: Medium
 Playstyle: Slow / Precision
@@ -163,7 +163,7 @@ Tags: aim, precision, risky_map
 
 ---
 
-## Map: Corrode
+## Corrode
 Sites: 2
 Rotation_Speed: Medium
 Playstyle: Hybrid / Angle Control

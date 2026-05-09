@@ -18,7 +18,7 @@ headers_to_split_on = [
     ("###", "Specific Item")
 ]
 markdown_splitter = MarkdownHeaderTextSplitter(headers_to_split_on=headers_to_split_on)
-text_splitter = RecursiveCharacterTextSplitter(chunk_size=1500, chunk_overlap=200)
+text_splitter = RecursiveCharacterTextSplitter(chunk_size=800, chunk_overlap=100)
 
 def get_or_create_db(db_variable, file_name):
     if db_variable is not None:
